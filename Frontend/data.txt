@@ -1,0 +1,36 @@
+durable	Plastic build, durable	Plastic build,Mediocre	Plastic build, durable	Plastic build, durable	Plastic build, durable	
+Design Form Factor	Thin and sleek design; compact keyboard (numpad not present); Built-in touchpad	Basic design; full-size keyboard (includes numpad)	Thin and sleek design; compact keyboard(numpad not present); Built-in touchpad	Basic design; full-size keyboard (includes numpad)	Basic design; full-size keyboard (includes numpad)	Basic design; full-size keyboard (includes numpad)	
+Portability	Portable due to compact design	Comparatively less portable	Portable due to compact design	Comparatively less portable	Comparatively less portable	Comparatively less portable	
+Range/Connectivity	2.4GHz wireless connection; stable range up to 10m	2.4GHz wireless connection; stable range up to 10m	2.4GHz wireless connection; stable range up to 10m	NA	2.4GHz wireless connection; stable range up to 10m	2.4GHz wireless connection; stable range up to 10m	
+Latency	Minimal latency; suitable for standard usage	Minimal latency; suitable for standard usage	Minimal latency; suitable for standard usage	Minimal latency; suitable for standard usage	Minimal latency; suitable for standard usage	Minimal latency; suitable for standard usage	
+Ease of Setup	Plug and Play using the single USB dongle	Plug and Play using the single USB dongle	Plug and Play using the single USB dongle	Plug and Play using the single USB dongle	Plug and Play using the single USB dongle	Plug and Play using the single USB dongle	
+Typing Comfort	Responsive keys, cramped keys with no spacing (Built-in touchpad); Minimal sound while typing	Responsive keys, moderately spaced; typing sound can be heard	Responsive keys, cramped keys with no spacing (Built-in touchpad); Minimal sound while typing	Responsive keys, cramped keys with no spacing; Minimal sound while typing	Responsive keys, moderately spaced; typing sound can be heard	Responsive keys, moderately spaced; Minimal sound while typing	
+Additional Features	-On/off power SWITCH
+-Volume control buttons	Low  battery indicator 	-On/off power SWITCH
+-Volume control buttons	Low  battery indicator 	Low  battery indicator 	Low  battery indicator 	
+Compatibility	Compatible with PCs and laptops with USB-A port	Compatible with PCs and laptops with USB-A port	Compatible with PCs and laptops with USB-A port	Compatible with PCs and laptops with USB-A port	Compatible with PCs and laptops with USB-A port	Compatible with PCs and laptops with USB-A port	
+Cost and Warranty	MRP: ₹4,295
+Warranty: 1-year limited	MRP: ₹1,999
+Warranty: 1 year	MRP: ₹1100
+Warranty: 1 year	NA	NA	NA	
+Battery required	2 AA	1 AA	2 AA	1 AAA	1 AAA	1 AAA	
+
+
+
+
+
+
+Parameter	Logitech Media K400 Plus	ANT Value FKBRI05 wireless combo	ANT ESPORTS WK100	Ck234	Ck420	Ck801	Observations	Comment
+Durability	Plastic build (Built-in touchpad on keyboard)	Plastic build, slim and less durable	Plastic build (Built-in touchpad on keyboard)	Plastic build, slim and durable	Plastic build, slim and durable	Plastic build, slim and durable		
+Design and Comfort	Built-in touchpad on keyboard	Basic design, hard clicks are required	Built-in touchpad on keyboard	Basic design, suitable for standard usage	Basic design, suitable for standard usage	Basic design, suitable for standard usage		
+On/Off button	Easy to toggle	No Button Available	Easy to toggle	Easy to toggle	No Button Available	No Button Available		
+Weight	NA	Lightweight build	NA	Lightweight build	Lightweight build	Lightweight build		
+Range/Connectivity	2.4GHz wireless connection; stable range up to 10m	2.4GHz wireless connection; stable range up to 10m	2.4GHz wireless connection; stable range up to 10m	NA	2.4GHz wireless connection; stable range up to 10m	2.4GHz wireless connection; stable range up to 10m	Wireless mouse is not detected in the app after being removed once.	
+Precision and Sensitivity	Smooth and accurate	1000 DPI (fixed); smooth and accurate	Smooth and accurate	NA	NA	1200 DPI (fixed); smooth and accurate		DPI - Dots Per Inch related to change the sensitivity
+Button Features	2 buttons: Left click, Right click (Built-in touchpad)	3 buttons: Left click, Right click, scroll	2 buttons: Left click, Right click (Built-in touchpad)	3 buttons: Left click, Right click, scroll	3 buttons: Left click, Right click, scroll	3 buttons: Left click, Right click, scroll		
+Scroll	Requires double touch to scroll, Scroll feels smooth	Scroll feels smooth; clickable scroll	Requires double touch to scroll, Scroll feels smooth	Scroll feels smooth; clickable scroll	Scroll feels smooth; clickable scroll	Scroll feels smooth; clickable scroll		
+Cost and Warranty	MRP: ₹4,295
+Warranty: 1-year	MRP: ₹1,999
+Warranty: 1 year	MRP: ₹1100
+Warranty: 1 year	NA	NA	NA		
+Battery required	2 AA	2 AAA	2 AA	1AA	1AA	1AA		
