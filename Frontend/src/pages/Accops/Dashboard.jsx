@@ -67,7 +67,7 @@ const Dashboard = () => {
 						shouldOpenModal={true}
 					/>
 					<StatCard
-						title="JioCloud PC Open Issues"
+						title="JioPC Open Issues"
 						value={jioPcOpenIssuePieChart.reduce(
 							(acc, item) => acc + item.value,
 							0
@@ -107,9 +107,9 @@ const Dashboard = () => {
 
 			{/* Tasks Activity Table */}
 			<section className=" text-black mb-4 p-6 rounded-lg flex gap-10 ">
-				<JioPcObservation title="JioCloud PC" workItems={jioPcWorkItems} />
+				<JioPcObservation title="JioPC" workItems={jioPcWorkItems} />
 				<AreaChart
-					title="Issues Raised (16th Oct - 8th Mar)"
+					title="Issues Raised (10th Mar - 8th Apr)"
 					areaChartData={jioPcAreaChartData}
 				/>
 			</section>

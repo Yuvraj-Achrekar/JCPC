@@ -1,183 +1,130 @@
 import React from "react";
 import { IoClose } from "react-icons/io5";
 import { Dialog, DialogBackdrop, DialogPanel } from "@headlessui/react";
+import { FaLink, FaChalkboardTeacher, FaListAlt } from "react-icons/fa";
 
 const EmbibeTesting = ({ open, setOpen }) => {
-  return (
-    <Dialog
-      open={open}
-      onClose={() => setOpen(false)}
-      className="relative z-10"
-    >
-      <DialogBackdrop className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
+	return (
+		<Dialog
+			open={open}
+			onClose={() => setOpen(false)}
+			className="relative z-10">
+			<DialogBackdrop className="fixed inset-0 bg-black/30 backdrop-blur-sm" />
 
-      <div className="fixed inset-0 z-10 w-screen h-screen overflow-y-auto">
-        <div className="flex items-center justify-center text-center h-screen w-screen">
-          <DialogPanel className="relative w-[60%] h-fit max-h-[90%] overflow-scroll rounded-lg bg-white text-left shadow-xl transition-all mb-6">
-            <div className="sticky top-0 left-0 w-full bg-blue-800 text-white z-20">
-              <IoClose
-                onClick={() => setOpen(false)}
-                color="white"
-                size={26}
-                className="absolute top-2 right-3 hover:bg-red-500 hover:rounded-full p-1 cursor-pointer"
-              />
-              <h2 className="font-bold text-3xl text-center py-2">
-                LearnLite Embibe VDI Report
-              </h2>
-            </div>
+			<div className="fixed inset-0 z-10 w-screen h-screen overflow-y-auto">
+				<div className="flex items-center justify-center min-h-screen p-4">
+					<DialogPanel className="relative w-full max-w-4xl max-h-[90vh] overflow-hidden rounded-2xl bg-white text-left shadow-2xl">
+						{/* Header */}
+						<div className="sticky top-0 left-0 w-full bg-blue-800 text-white z-20 p-4 rounded-t-2xl flex justify-between items-center shadow">
+							<h2 className="font-bold text-2xl text-center w-full">
+								LearnLite & TeachLite Report
+							</h2>
+							<IoClose
+								onClick={() => setOpen(false)}
+								color="white"
+								size={26}
+								className="absolute right-4 top-4 hover:bg-red-600 transition p-1 rounded-full cursor-pointer"
+							/>
+						</div>
 
-            <div className="bg-gray-100 p-8 mt-2 mb-2 rounded-md shadow-md max-w-4xl mx-auto">
-              {/* Basic Info */}
-              <section className="bg-white p-6 rounded-lg shadow mb-6">
-                <h2 className="text-lg font-semibold mb-4">Test Details</h2>
-                <ul className="list-disc ml-4 space-y-2">
-                  <li>
-                    <strong>LearnLite URL:</strong>{" "}
-                    <a
-                      href="https://school.embibe.com/teach/learn-lite/welcome"
-                      className="text-blue-600 underline"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      https://school.embibe.com/teach/learn-lite/welcome
-                    </a>
-                  </li>
-                  <li>
-                    <strong>TeachLite URL:</strong>{" "}
-                    <a
-                      href="https://school.embibe.com/teach/lite/welcome"
-                      className="text-blue-600 underline"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      https://school.embibe.com/teach/lite/welcome
-                    </a>
-                  </li>
-                  <li>
-                    <strong>License Key:</strong> 321568905629
-                  </li>
-                </ul>
-              </section>
+						{/* Content */}
+						<div className="bg-gray-50 overflow-y-scroll p-6 space-y-6 max-h-[80vh] scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100">
+							{/* Test URLs */}
+							<Section icon={<FaLink />} title="Test Details">
+								<ul className="list-disc ml-6 space-y-2 text-gray-700">
+									<li>
+										<strong>LearnLite URL:</strong>{" "}
+										<a
+											href="https://school.embibe.com/teach/learn-lite/welcome"
+											className="text-blue-600 underline hover:text-blue-800 transition"
+											target="_blank"
+											rel="noopener noreferrer">
+											https://school.embibe.com/teach/learn-lite/welcome
+										</a>
+									</li>
+									<li>
+										<strong>TeachLite URL:</strong>{" "}
+										<a
+											href="https://school.embibe.com/teach/lite/welcome"
+											className="text-blue-600 underline hover:text-blue-800 transition"
+											target="_blank"
+											rel="noopener noreferrer">
+											https://school.embibe.com/teach/lite/welcome
+										</a>
+									</li>
+								</ul>
+							</Section>
 
-              {/* General Findings */}
-              <section className="bg-white p-6 rounded-lg shadow mb-6">
-                <h2 className="text-lg font-semibold mb-3">
-                  General Observations
-                </h2>
-                <ul className="list-disc ml-4 space-y-2">
-                  <li>Lag observed while navigating sections.</li>
-                  <li>
-                    All videos remain in an infinite loading state (some
-                    intermittently).
-                  </li>
-                  <li>Course progress is not retained.</li>
-                  <li>Horizontal scrolling of books is not smooth.</li>
-                  <li>Language dropdown selection does not reflect.</li>
-                  <li>
-                    Search functionality works fine (outside interactive
-                    section).
-                  </li>
-                  <li>The Change Goal section and questions perform well.</li>
-                  <li>Audio plays clearly without distortion.</li>
-                  <li>Report after session ends works correctly.</li>
-                </ul>
-              </section>
+							{/* LearnLite */}
+							<Section icon={<FaListAlt />} title="Learn Lite Summary">
+								<List
+									items={[
+										"Lag observed while navigating sections.",
+										"All videos remain in an infinite loading state (some intermittently).",
+										"Course progress is not retained.",
+										"Horizontal scrolling of books is not smooth.",
+										"Language dropdown selection does not reflect.",
+										"Search functionality works fine (outside interactive section).",
+										"The Change Goal section and questions perform well.",
+										"Audio plays clearly without distortion.",
+										"Report after session ends works correctly.",
+									]}
+								/>
+							</Section>
 
-              {/* Section-wise Summary */}
-              <section className="bg-white p-6 rounded-lg shadow mb-6">
-                <h2 className="text-lg font-semibold mb-3">
-                  Section-wise Findings
-                </h2>
+							{/* TeachLite */}
+							<Section
+								icon={<FaChalkboardTeacher />}
+								title="Teach Lite Summary">
+								<List
+									items={[
+										"Whiteboard tools experience lag in drawing/writing",
+										"3D models have frame drops and lag",
+										"No option to switch back to previous content after whiteboard",
+										"“With Voice” and “Without Voice” restart the lesson",
+										"Recently taught classes are not saved for revisit",
+										"Navigation in “Images” section (next/previous) does not work",
+										"Search in “Add Interactive Elements” does not work",
+										"Selection tool, shapes, board color, grid, and clear drawing work properly",
+										"“Add Lessons” and “Practice Lessons” work fine",
+										"Quiz section works well (hint, solution, difficulty selection)",
+									]}
+								/>
+							</Section>
 
-                {/* Home */}
-                <h3 className="font-semibold mb-1">Home</h3>
-                <ul className="list-disc ml-6 mb-4 space-y-1">
-                  <li>Initial graphics load properly</li>
-                  <li>Carousel images lag</li>
-                  <li>Chatbot is functional but gives unhelpful responses</li>
-                  <li>Video in education banner is cropped</li>
-                  <li>Brief white screen before animation banner loads</li>
-                </ul>
-
-                {/* Learn */}
-                <h3 className="font-semibold mb-1">Learn</h3>
-                <ul className="list-disc ml-6 mb-4 space-y-1">
-                  <li>Videos load slowly and lag during playback</li>
-                  <li>Infinite loading in “About this Chapter” cards</li>
-                  <li>Session summary feature works fine</li>
-                </ul>
-
-                {/* Practice */}
-                <h3 className="font-semibold mb-1">Practice</h3>
-                <ul className="list-disc ml-6 mb-4 space-y-1">
-                  <li>Voice input via microphone does not work properly</li>
-                </ul>
-
-                {/* Test */}
-                <h3 className="font-semibold mb-1">Test</h3>
-                <ul className="list-disc ml-6 mb-4 space-y-1">
-                  <li>Test flow and feedback work as expected</li>
-                </ul>
-
-                {/* Achieve */}
-                <h3 className="font-semibold mb-1">Achieve</h3>
-                <ul className="list-disc ml-6 mb-4 space-y-1">
-                  <li>Loader graphics display correctly</li>
-                </ul>
-
-                {/* Side Menu */}
-                <h3 className="font-semibold mb-1">Side Menu</h3>
-                <ul className="list-disc ml-6 mb-4 space-y-1">
-                  <li>Subscription & Payments page appears empty</li>
-                </ul>
-              </section>
-
-              {/* Whiteboard & Interactive */}
-              <section className="bg-white p-6 rounded-lg shadow mb-6">
-                <h2 className="text-lg font-semibold mb-3">
-                  Whiteboard & Interactive Tools
-                </h2>
-                <ul className="list-disc ml-4 space-y-2">
-                  <li>Whiteboard tools experience lag in drawing/writing</li>
-                  <li>3D models have frame drops and lag</li>
-                  <li>
-                    No option to switch back to previous content after
-                    whiteboard
-                  </li>
-                  <li>“With Voice” and “Without Voice” restart the lesson</li>
-                  <li>Recently taught classes are not saved for revisit</li>
-                  <li>
-                    Navigation in “Images” section (next/previous) does not work
-                  </li>
-                  <li>Search in “Add Interactive Elements” does not work</li>
-                  <li>
-                    Selection tool, shapes, board color, grid, and clear drawing
-                    work properly
-                  </li>
-                  <li>“Add Lessons” and “Practice Lessons” work fine</li>
-                  <li>
-                    Quiz section works well (hint, solution, difficulty
-                    selection)
-                  </li>
-                </ul>
-              </section>
-
-              {/* Issue Sheet */}
-              <section className="bg-white p-6 rounded-lg shadow mb-8">
-                <h2 className="text-lg font-semibold mb-3">Issue Sheet</h2>
-                <p>
-                  Please refer to the detailed issue sheet:{" "}
-                  <span className="text-blue-600 underline cursor-pointer">
-                    Embibe Issue Sheet.xlsx
-                  </span>
-                </p>
-              </section>
-            </div>
-          </DialogPanel>
-        </div>
-      </div>
-    </Dialog>
-  );
+							{/* Issue Sheet */}
+							{/* <Section icon={<FaFileAlt />} title="Issue Sheet">
+								<p>
+									Please refer to the detailed issue sheet:{" "}
+									<span className="text-blue-600 underline cursor-pointer hover:text-blue-800 transition">
+										Embibe Issue Sheet.xlsx
+									</span>
+								</p>
+							</Section> */}
+						</div>
+					</DialogPanel>
+				</div>
+			</div>
+		</Dialog>
+	);
 };
+
+// Reusable Components
+const Section = ({ title, icon, children }) => (
+	<section className="bg-white p-5 rounded-xl shadow-md">
+		<h3 className="text-xl font-semibold flex items-center gap-2 mb-3 text-blue-700">
+			{icon} {title}
+		</h3>
+		{children}
+	</section>
+);
+
+const List = ({ items }) => (
+	<ul className="list-disc ml-6 space-y-1 text-gray-700">
+		{items.map((item, idx) => (
+			<li key={idx}>{item}</li>
+		))}
+	</ul>
+);
 
 export default EmbibeTesting;

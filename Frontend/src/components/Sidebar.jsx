@@ -26,7 +26,7 @@ const Sidebar = () => {
 			<div className="text-2xl font-bold px-3 py-2 text-center flex">
 				<img
 					src="/images/icons/JioCloudPc.png"
-					alt="JioCloudPc logo"
+					alt="JioPC logo"
 					className="w-[50px] h-[50px] rounded-lg block mx-auto mb-3"
 				/>
 			</div>

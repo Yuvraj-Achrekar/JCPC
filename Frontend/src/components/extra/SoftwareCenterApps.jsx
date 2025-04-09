@@ -34,7 +34,7 @@ const SoftwareCenterApps = ({ open, setOpen }) => {
 			open={open}
 			onClose={() => setOpen(false)}
 			className="relative z-10">
-			<DialogBackdrop className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
+			<DialogBackdrop className="fixed inset-0 bg-black/30 backdrop-blur-sm" />
 
 			<div className="fixed inset-0 z-10 w-screen h-screen overflow-y-auto">
 				<div className="flex items-center justify-center text-center h-screen w-screen">
@@ -59,8 +59,8 @@ const SoftwareCenterApps = ({ open, setOpen }) => {
 								<p className="bg-white rounded-lg">
 									Conducted research to identify and evaluate additional
 									applications from 8 different categories which are available
-									on "www.flathub.org" that are compatible with JioCloud PC,
-									provided insights and recommendations for the same.
+									on "www.flathub.org" that are compatible with JioPC, provided
+									insights and recommendations for the same.
 								</p>
 							</section>
 
