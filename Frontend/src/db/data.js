@@ -4,11 +4,11 @@ export const issuePieChart = [
 ];
 
 export const totalIssuePieChart = [
-  { id: 0, value: 64, label: "Blocker", color: "#fecaca" },
-  { id: 1, value: 400, label: "Critical", color: "#fef08a" },
-  { id: 2, value: 499, label: "Major", color: "#fed7aa" },
-  { id: 3, value: 358, label: "Normal", color: "#e9d5ff" },
-  { id: 4, value: 46, label: "Minor", color: "#bae6fd" },
+  { id: 0, value: 28, label: "Blocker", color: "#fecaca" },
+  { id: 1, value: 307, label: "Critical", color: "#fef08a" },
+  { id: 2, value: 449, label: "Major", color: "#fed7aa" },
+  { id: 3, value: 315, label: "Normal", color: "#e9d5ff" },
+  { id: 4, value: 45, label: "Minor", color: "#bae6fd" },
 ];
 
 export const JioCloudTestingData = [
