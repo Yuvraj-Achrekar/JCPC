@@ -118,7 +118,7 @@ const Activities = () => {
 								</p>
 								<h3 className="text-lg font-semibold">AI Chat Bot</h3>
 								<p className="text-sm text-gray-600">
-									Developed a smart AI ChatBot to handle user queries and FAQs
+									Developed a smart AI Chat Bot to handle user queries and FAQs
 									regarding JioPC.
 								</p>
 							</div>
