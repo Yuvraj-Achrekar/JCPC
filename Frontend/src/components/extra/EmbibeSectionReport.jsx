@@ -25,7 +25,7 @@ const EmbibeSectionReport = ({ open, setOpen }) => {
 						{/* Header */}
 						<div className="sticky top-0 left-0 w-full bg-blue-800 text-white z-20 p-4 rounded-t-2xl flex justify-between items-center">
 							<h2 className="font-bold text-2xl text-center w-full">
-								Embibe Website Section-wise Report
+								Embibe Website Report
 							</h2>
 							<IoClose
 								onClick={() => setOpen(false)}
@@ -40,9 +40,9 @@ const EmbibeSectionReport = ({ open, setOpen }) => {
 							{/* Overview */}
 							<Section title="Overview">
 								<p>
-									We checked the Embibe website across various sections
-									including Home, Learn, Practice, Test, Achieve, and Side Menu.
-									Below is a section-wise summary of the findings.
+									We tested the Embibe website across various sections including
+									Home, Learn, Practice, Test, Achieve, and Side Menu. Below is
+									a section-wise summary of the findings.
 								</p>
 							</Section>
 

@@ -23,6 +23,9 @@ const Activities = () => {
 		centerPadding: "60px",
 		slidesToShow: 3,
 		speed: 500,
+		swipeToSlide: true, // allows touchpad drag to scroll
+		draggable: true, // allows mouse drag
+		touchMove: true,
 	};
 
 	return (
@@ -141,7 +144,7 @@ const Activities = () => {
 									Embibe Website Testing
 								</h3>
 								<p className="text-sm text-gray-600">
-									We checked the Embibe website across various sections,
+									We tested the Embibe website across various sections,
 									including Home, Learn, Practice, Test, Achieve, and Side Menu.
 								</p>
 							</div>
