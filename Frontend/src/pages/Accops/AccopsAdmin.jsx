@@ -282,7 +282,7 @@ export default function AccopsAdmin() {
                 user._id !== member._id && (
                   <div
                     key={member._id}
-                    className={`rounded-lg border-2 border-black`}
+                    className={`rounded-lg border-2 border-gray-400`}
                   >
                     <div className="p-5">
                       <div className="flex items-start justify-between">
@@ -330,7 +330,7 @@ export default function AccopsAdmin() {
                             </button>
                           </div>
                           {member.isAdmin && (
-                            <div className="bg-gray-300 rounded-full flex items-center px-2 py-1 text-sm gap-1 mt-2">
+                            <div className="bg-blue-300 rounded-full flex items-center px-2 py-1 text-sm gap-1 mt-2">
                               <Shield size={15} />
                               Admin
                             </div>
