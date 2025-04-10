@@ -52,7 +52,7 @@ const BotTestingSummary = ({ open, setOpen }) => {
 								className="absolute top-2 right-3 hover:bg-red-500 hover:rounded-full p-1 cursor-pointer"
 							/>
 							<h2 className="font-bold text-3xl text-center py-3">
-								Bot Testing Summary
+								AI Chat Bot Testing Summary
 							</h2>
 						</div>
 
