@@ -39,7 +39,6 @@ const BotTestingSummary = ({ open, setOpen }) => {
     >
       <DialogBackdrop className="fixed inset-0 bg-black/30 backdrop-blur-sm" />
 
-<<<<<<< HEAD
       <div className="fixed inset-0 z-10 w-screen h-screen overflow-y-auto">
         <div className="flex items-center justify-center text-center h-screen w-screen">
           <DialogPanel className="relative w-[70%] h-fit max-h-[90%] overflow-y-scroll rounded-lg bg-white text-left shadow-xl transition-all mb-6">
@@ -51,25 +50,9 @@ const BotTestingSummary = ({ open, setOpen }) => {
                 className="absolute top-2 right-3 hover:bg-red-500 hover:rounded-full p-1 cursor-pointer"
               />
               <h2 className="font-bold text-3xl text-center py-3">
-                Bot Testing Summary
+                AI Chat Bot Testing Summary
               </h2>
             </div>
-=======
-			<div className="fixed inset-0 z-10 w-screen h-screen overflow-y-auto">
-				<div className="flex items-center justify-center text-center h-screen w-screen">
-					<DialogPanel className="relative w-[70%] h-fit max-h-[90%] overflow-y-scroll rounded-lg bg-white text-left shadow-xl transition-all mb-6">
-						<div className="sticky top-0 left-0 w-full bg-blue-800 text-white z-20">
-							<IoClose
-								onClick={() => setOpen(false)}
-								color="white"
-								size={26}
-								className="absolute top-2 right-3 hover:bg-red-500 hover:rounded-full p-1 cursor-pointer"
-							/>
-							<h2 className="font-bold text-3xl text-center py-3">
-								AI Chat Bot Testing Summary
-							</h2>
-						</div>
->>>>>>> 002a9fdae9eb7de6959eca1646d7cb78a52a8b7c
 
             <div className="bg-gray-100 p-8 space-y-6">
               <section className="bg-white p-6 rounded-lg shadow">
