@@ -1,11 +1,12 @@
 import React from "react";
 import { Dialog, DialogBackdrop, DialogPanel } from "@headlessui/react";
 import { IoClose } from "react-icons/io5";
+import { FaHome } from "react-icons/fa";
 
 const AppCard = ({ name, color }) => {
   return (
     <div
-      className={`bg-${color}-400 border border-${color}-100 hover:border-${color}-400 
+      className={`bg-${color}-300 border border-${color}-100 hover:border-${color}-400 
       hover:shadow-lg transition-all duration-300 rounded-xl px-4 py-6 flex items-center 
       justify-center text-center text-sm font-medium text-black shadow-lg`}
     >
@@ -13,6 +14,24 @@ const AppCard = ({ name, color }) => {
     </div>
   );
 };
+
+const List = ({ items }) => (
+  <ul className="list-disc ml-6 space-y-1 text-gray-700">
+    {items.map((item, idx) => (
+      <li key={idx}>{item}</li>
+    ))}
+  </ul>
+);
+
+// Helper components
+const Section = ({ title, icon, children }) => (
+  <section className="bg-white p-5 rounded-xl shadow-md">
+    <h3 className="text-xl font-semibold flex items-center gap-2 mb-3 text-blue-700">
+      {icon} {title}
+    </h3>
+    {children}
+  </section>
+);
 
 const PeripheralsTesting = ({ open, setOpen }) => {
   const passedPeripherals = [
@@ -67,24 +86,35 @@ const PeripheralsTesting = ({ open, setOpen }) => {
             </div>
 
             {/* Content */}
-            <div className="bg-gray-50 px-8 py-6 overflow-y-auto h-[calc(90vh-80px)]">
-              {/* Overview Section */}
-              <section className="bg-white p-6 rounded-xl shadow mb-8 border border-gray-200">
-                <h2 className="text-xl font-semibold mb-1 text-blue-900">
-                  Task Overview
-                </h2>
-                <p className="text-gray-700 leading-relaxed mb-4">
-                  Conducted research to identify and evaluate additional
-                  applications from 8 different categories available on that are
-                  compatible with JioPC, and provided insights and
-                  recommendations for the same.
+            <div className="bg-gray-50 overflow-y-scroll p-6 space-y-6 max-h-[80vh] scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100">
+              {/* Overview */}
+              <Section title="Task Overview">
+                <p>
+                  The team tested 23 wireless keyboards and mice to ensure
+                  compatibility and user experience before bundling with the
+                  product. Testing covered key functionality, ergonomics, build
+                  quality, responsiveness, and battery requirements. Input
+                  latency and wireless performance were also thoroughly
+                  evaluated.
                 </p>
+              </Section>
 
-                {/* Applications Section */}
+              {/* Sections */}
+              <Section icon={<FaHome />} title="Testing Focus Area">
+                <List
+                  items={[
+                    "Functionality of all keys and keyboard shortcuts",
+                    "Ergonomics and handling comfort",
+                    "Build durability and material quality",
+                    "Sensitivity and typing responsiveness",
+                    "Special features and usability",
+                    "Battery type and power requirements",
+                    "Input latency and wireless response",
+                  ]}
+                />
+              </Section>
 
-                {/* <h2 className="text-xl font-semibold mb-6 text-blue-900">
-                  Peripherals Tested
-                </h2> */}
+              {/* <Section>
                 <div>
                   <p className="text-lg font-semibold mb-2 text-blue-900">
                     Passed
@@ -105,7 +135,7 @@ const PeripheralsTesting = ({ open, setOpen }) => {
                     <AppCard key={index} name={app} color="red" />
                   ))}
                 </div>
-              </section>
+              </Section> */}
             </div>
           </DialogPanel>
         </div>

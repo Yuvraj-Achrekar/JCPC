@@ -3,7 +3,7 @@ import { IoClose } from "react-icons/io5";
 import { Dialog, DialogBackdrop, DialogPanel } from "@headlessui/react";
 import { FaHome } from "react-icons/fa";
 
-const EmbibeSectionReport = ({ open, setOpen }) => {
+const JioWrite = ({ open, setOpen }) => {
   return (
     <Dialog
       open={open}
@@ -18,7 +18,7 @@ const EmbibeSectionReport = ({ open, setOpen }) => {
             {/* Header */}
             <div className="sticky top-0 left-0 w-full bg-blue-800 text-white z-20 p-4 rounded-t-2xl flex justify-between items-center">
               <h2 className="font-bold text-2xl text-center w-full">
-                Embibe Website Testing
+                JioWrite, JioDesks, JioSheets Testing
               </h2>
               <IoClose
                 onClick={() => setOpen(false)}
@@ -33,33 +33,22 @@ const EmbibeSectionReport = ({ open, setOpen }) => {
               {/* Overview */}
               <Section title="Overview">
                 <p>
-                  The team tasted the Embibe LeanLits application, which was
-                  being considered for integration with the product. The Android
-                  TV application was manually installed and tested.
+                  The team tested three productivity applications within the
+                  JioWorkspace suite on persistent machines. The outcome of this
+                  testing helped the product team decide their readiness for
+                  deployment in the SIT environment.
                 </p>
               </Section>
 
               {/* Sections */}
-              <Section icon={<FaHome />} title="Testing Focus Area">
+              <Section icon={<FaHome />} title="Applications Covered:">
                 <List
                   items={[
-                    "User interface and navigation",
-                    "Contant variety and quality (e.g., quizzes, video lessons, 30 simulations, books)",
-                    "App performance (lagg, crashes)",
-                    "Coverage across academic and competitive domaina like school curriculum",
-                    "UPSC, MBA, Medical, and Engineering Exams",
+                    "JioWrite-Word processing application",
+                    "JioDesks-Presentation creation tool",
+                    "Jioshoots-Spreadsheet editor",
                   ]}
                 />
-              </Section>
-
-              <Section title="Summary">
-                <p>
-                  The team tested the Embibe LeanLits app for potential product
-                  integration, While focusing was on key aspects of app like
-                  UI/navigation, content quality, app performance, and domain
-                  coverage. The app was evaluated across school and competitive
-                  exams like UPSC, MBA, Medical, and Engineering.
-                </p>
               </Section>
             </div>
           </DialogPanel>
@@ -87,4 +76,4 @@ const List = ({ items }) => (
   </ul>
 );
 
-export default EmbibeSectionReport;
+export default JioWrite;

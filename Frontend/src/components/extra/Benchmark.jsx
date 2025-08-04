@@ -3,7 +3,7 @@ import { IoClose } from "react-icons/io5";
 import { Dialog, DialogBackdrop, DialogPanel } from "@headlessui/react";
 import { FaHome } from "react-icons/fa";
 
-const EmbibeSectionReport = ({ open, setOpen }) => {
+const BenchMark = ({ open, setOpen }) => {
   return (
     <Dialog
       open={open}
@@ -18,7 +18,7 @@ const EmbibeSectionReport = ({ open, setOpen }) => {
             {/* Header */}
             <div className="sticky top-0 left-0 w-full bg-blue-800 text-white z-20 p-4 rounded-t-2xl flex justify-between items-center">
               <h2 className="font-bold text-2xl text-center w-full">
-                Embibe Website Testing
+                VDI Performance Benchmarking
               </h2>
               <IoClose
                 onClick={() => setOpen(false)}
@@ -33,32 +33,47 @@ const EmbibeSectionReport = ({ open, setOpen }) => {
               {/* Overview */}
               <Section title="Overview">
                 <p>
-                  The team tasted the Embibe LeanLits application, which was
-                  being considered for integration with the product. The Android
-                  TV application was manually installed and tested.
+                  The team benchmarked VDI performance under different internet
+                  speeds to assess usability and responsiveness such asload
+                  times, crash rates, input delays, frame drops, and max
+                  playback resolution.
                 </p>
               </Section>
 
               {/* Sections */}
-              <Section icon={<FaHome />} title="Testing Focus Area">
+              <Section icon={<FaHome />} title="Scenarios Covered:">
                 <List
                   items={[
-                    "User interface and navigation",
-                    "Contant variety and quality (e.g., quizzes, video lessons, 30 simulations, books)",
-                    "App performance (lagg, crashes)",
-                    "Coverage across academic and competitive domaina like school curriculum",
-                    "UPSC, MBA, Medical, and Engineering Exams",
+                    "Browsing local fito directorios",
+                    "Opening PDF, image, and Excel files",
+                    "Web browsing functionality",
+                    "Input latency using mouse and keyboard",
+                    "Online and offline video playback",
+                  ]}
+                />
+              </Section>
+
+              {/* Sections */}
+              <Section icon={<FaHome />} title="Key Metrics Measured">
+                <List
+                  items={[
+                    "Load time and launch time",
+                    "Application success rate without crashing",
+                    "Input latency Inveis",
+                    "Frame drop rates during playtrack",
+                    "Maximum playback resolution supported",
                   ]}
                 />
               </Section>
 
               <Section title="Summary">
                 <p>
-                  The team tested the Embibe LeanLits app for potential product
-                  integration, While focusing was on key aspects of app like
-                  UI/navigation, content quality, app performance, and domain
-                  coverage. The app was evaluated across school and competitive
-                  exams like UPSC, MBA, Medical, and Engineering.
+                  The team benchmarked VDI performance under 25, 15, and 5 Mbps
+                  internet speeds to assess usability and responsiveness.
+                  Scenarios included file access, web browsing, input latency,
+                  and video playback. Key metrics measured were load times,
+                  crash rates, input delays, frame drops, and max playback
+                  resolution.
                 </p>
               </Section>
             </div>
@@ -87,4 +102,4 @@ const List = ({ items }) => (
   </ul>
 );
 
-export default EmbibeSectionReport;
+export default BenchMark;

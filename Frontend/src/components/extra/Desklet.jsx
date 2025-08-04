@@ -20,57 +20,7 @@ const List = ({ items }) => (
   </ul>
 );
 
-const SoftwareCenterApps = ({ open, setOpen }) => {
-  const apps = [
-    "GCompris",
-    "Tux Paint",
-    "LibreCAD",
-    "VLC",
-    "Lollypop",
-    "Rhythmbox",
-    "Audacious",
-    "OBS Studio",
-    "HandBrake",
-    "GPodder",
-    "ONLYOFFICE",
-    "Zotero",
-    "BleachBit",
-    "Flatseal",
-    "DBeaver",
-    "ScummVM",
-    "melonDS",
-    "GnuCash",
-    "Health",
-    "Todoist: To-Do List & Tasks",
-    "FileZilla",
-    "KDiskMark",
-    "MongoDB Compass",
-    "Gitg",
-    "Snes9x",
-    "Heroic Games Launcher",
-    "MyGNUHealth",
-    "Inner Breeze",
-    "Blanket",
-    "Eye of GNOME",
-    "Gwenview",
-    "Krita",
-    "Okular",
-    "Evince",
-    "MPV",
-    "Bluefish",
-    "GNU Emacs",
-    "Kate",
-    "Komikku",
-    "Crosswords",
-    "Papers",
-    "Dialect",
-    "Firefox",
-    "Photocrea",
-    "Timer",
-    "Insomnia",
-    "Upscaler",
-  ];
-
+const Desklets = ({ open, setOpen }) => {
   return (
     <Dialog
       open={open}
@@ -99,11 +49,11 @@ const SoftwareCenterApps = ({ open, setOpen }) => {
               {/* Overview */}
               <Section title="Task Overview">
                 <p>
-                  The team tested over 400 internal apps in the SIT environment
-                  to evaluate stability and usability. Key focus areas included
-                  crashes, UI performance, resource usage, and core
-                  functionalities. Test outcomes guided the product team's
-                  decisions on moving apps to production.
+                  The team conducted thorough testing of interactive elements
+                  like desklets and applets to ensure their performance and
+                  stability. A total of 65 desklets and 251 applets were
+                  evaluated. This testing ensured smooth user interaction and
+                  system reliability.
                 </p>
               </Section>
 
@@ -137,4 +87,4 @@ const SoftwareCenterApps = ({ open, setOpen }) => {
   );
 };
 
-export default SoftwareCenterApps;
+export default Desklets;

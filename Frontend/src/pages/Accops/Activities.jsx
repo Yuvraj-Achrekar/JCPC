@@ -1,21 +1,30 @@
 import React, { useState } from "react";
-import PeripheralsComparison from "../../components/extra/PeripheralsComparison";
-import PeripheralsTesting from "../../components/extra/PeripheralsTesting";
 import { Card, CardContent, CardMedia } from "@mui/material";
 import SoftwareCenterApps from "../../components/extra/SoftwareCenterApps";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+// components import
+import PeripheralsTesting from "../../components/extra/PeripheralsTesting";
+import Firmware from "../../components/extra/Firmware";
+import JioWrite from "../../components/extra/JioWrite";
+import Desklet from "../../components/extra/Desklet";
 import AiChatBot from "../../components/extra/AiChatBot";
 import EmbibeTesting from "../../components/extra/EmbibeTesting";
 import EmbibeSectionReport from "../../components/extra/EmbibeSectionReport";
+import Desklets from "../../components/extra/Desklet";
+import BenchMark from "../../components/extra/Benchmark";
 
 const Activities = () => {
   const [openSelfie, setOpenSelfie] = useState(false);
   const [openPeripherals, setOpenPeripherals] = useState(false);
-  const [openEmbibe, setOpenEmbibe] = useState(false);
   const [openSoftwareCenterApps, setOpenSoftwareCenterApps] = useState(false);
-  const [openAiChatBot, setOpenAiChatBot] = useState(false);
+  const [openJioGenie, setOpenJioGenie] = useState(false);
+  const [openBenchmarkTesting, setOpenBenchmarkTesting] = useState(false);
+  const [openJioWrites, setOpenJioWrites] = useState(false);
+  const [openFirmwareTesting, setOpenFirmwareTesting] = useState(false);
+  const [openDesklet, setOpenDesklet] = useState(false);
+
   const settings = {
     className: "center",
     centerMode: true,
@@ -46,18 +55,18 @@ const Activities = () => {
               setOpen={setOpenSoftwareCenterApps}
             />
             <CardMedia
-              sx={{ height: 200 }}
+              sx={{ height: 300 }}
               image="/images/extra/Additional.png"
             />
-            <CardContent>
+            <CardContent className="mb-5">
               <div className="">
                 <p className="bg-blue-100 inline-block px-2 py-1 rounded-full text-blue-800 font-light font-mono text-xs mb-2">
-                  Research
+                  Testing
                 </p>
                 <h3 className="text-lg font-semibold">Additional Apps</h3>
                 <p className="text-sm text-gray-600">
-                  Team conducted research to identify and evaluate additional
-                  applications
+                  The team tested over 400 internal apps in the SIT environment
+                  to evaluate stability and usability.
                 </p>
               </div>
             </CardContent>
@@ -72,7 +81,10 @@ const Activities = () => {
               open={openPeripherals}
               setOpen={setOpenPeripherals}
             />
-            <CardMedia sx={{ height: 200 }} image="/images/extra/1.jpg" />
+            <CardMedia
+              sx={{ height: 300 }}
+              image="/images/extra/Peripherals.png"
+            />
             <CardContent>
               <div className="">
                 <p className="bg-blue-100 inline-block px-2 py-1 rounded-full text-blue-800 font-light font-mono text-xs mb-2">
@@ -80,47 +92,31 @@ const Activities = () => {
                 </p>
                 <h3 className="text-lg font-semibold">Peripherals Testing</h3>
                 <p className="text-sm text-gray-600">
-                  Explored the key features and tested the mouse and keyboards
-                  to choose the best peripherals.
+                  The team tested wireless keyboards and mice to ensure
+                  compatibility and user experience before bundling with the
+                  product.
                 </p>
               </div>
             </CardContent>
           </Card>
 
-          {/* LearnLite and TeachLite */}
-          <Card className="activityCard" onClick={() => setOpenEmbibe(true)}>
-            <EmbibeTesting open={openEmbibe} setOpen={setOpenEmbibe} />
+          {/* Applet and Deklet */}
+          <Card className="activityCard" onClick={() => setOpenDesklet(true)}>
+            <Desklets open={openDesklet} setOpen={setOpenDesklet} />
 
-            <CardMedia sx={{ height: 200 }} image="/images/extra/4.png" />
+            <CardMedia sx={{ height: 300 }} image="/images/extra/Applet.png" />
             <CardContent>
               <div className="">
                 <p className="bg-blue-100 inline-block px-3 py-1 rounded-full text-blue-800 font-light font-mono text-xs mb-2">
                   Testing
                 </p>
                 <h3 className="text-lg font-semibold">
-                  LearnLite & TeachLite Testing
+                  Applets & Desklets Testing
                 </h3>
                 <p className="text-sm text-gray-600">
-                  Our team worked on creating a comprehensive report for the
-                  LearnLite and TeachLite webapps
-                </p>
-              </div>
-            </CardContent>
-          </Card>
-
-          {/* Ai Chat Bot */}
-          <Card className="activityCard" onClick={() => setOpenAiChatBot(true)}>
-            <AiChatBot open={openAiChatBot} setOpen={setOpenAiChatBot} />
-            <CardMedia sx={{ height: 200 }} image="/images/extra/2.png" />
-            <CardContent>
-              <div className="">
-                <p className="bg-blue-100 inline-block px-2 py-1 rounded-full text-blue-800 font-light font-mono text-xs mb-2">
-                  AI Feature
-                </p>
-                <h3 className="text-lg font-semibold">AI Chat Bot</h3>
-                <p className="text-sm text-gray-600">
-                  Developed a smart AI Chat Bot to handle user queries and FAQs
-                  regarding JioPC.
+                  The team conducted thorough testing of interactive elements
+                  like desklets and applets to ensure their performance and
+                  stability.
                 </p>
               </div>
             </CardContent>
@@ -131,10 +127,10 @@ const Activities = () => {
             <EmbibeSectionReport open={openSelfie} setOpen={setOpenSelfie} />
             <CardMedia
               sx={{
-                height: 200,
-                backgroundPosition: "center top 10%", // Moves the image lower
+                height: 300,
+                backgroundPosition: "top", // Moves the image lower
               }}
-              image="/images/extra/3.png"
+              image="/images/extra/Embibe.png"
             />
             <CardContent>
               <div className="">
@@ -145,8 +141,96 @@ const Activities = () => {
                   Embibe Website Testing
                 </h3>
                 <p className="text-sm text-gray-600">
-                  We tested the Embibe website across various sections,
-                  including Home, Learn, Practice, Test, Achieve, and Side Menu.
+                  The team tasted the Embibe LeanLits application, which was
+                  being considered for integration with the product.
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* BenchMark Testing */}
+          <Card
+            className="activityCard"
+            onClick={() => setOpenBenchmarkTesting(true)}
+          >
+            <BenchMark
+              open={openBenchmarkTesting}
+              setOpen={setOpenBenchmarkTesting}
+            />
+            <CardMedia
+              sx={{
+                height: 300,
+                backgroundPosition: "center top 10%", // Moves the image lower
+              }}
+              image="/images/extra/Benchmarking.png"
+            />
+            <CardContent>
+              <div className="">
+                <p className="bg-blue-100 inline-block px-2 py-1 rounded-full text-blue-800 font-light font-mono text-xs mb-2">
+                  Research
+                </p>
+                <h3 className="text-lg font-semibold">
+                  VDI Performance Benchmarking
+                </h3>
+                <p className="text-sm text-gray-600">
+                  The team benchmarked VDI performance under 25, 15, and 5 Mbps
+                  internet speeds to assess usability and responsiveness.
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/*JioWrite  */}
+          <Card className="activityCard" onClick={() => setOpenJioWrites(true)}>
+            <JioWrite open={openJioWrites} setOpen={setOpenJioWrites} />
+            <CardMedia
+              sx={{
+                height: 300,
+                backgroundPosition: "center top 10%", // Moves the image lower
+              }}
+              image="/images/extra/Apps.png"
+            />
+            <CardContent>
+              <div className="">
+                <p className="bg-blue-100 inline-block px-2 py-1 rounded-full text-blue-800 font-light font-mono text-xs mb-2">
+                  Testing
+                </p>
+                <h3 className="text-lg font-semibold">
+                  JioWrite, JioDesks, JioSheets Testing
+                </h3>
+                <p className="text-sm text-gray-600">
+                  The team tested three productivity applications within the
+                  JioWorkspace suite on persistent machines.
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Firmware */}
+          <Card
+            className="activityCard"
+            onClick={() => setOpenFirmwareTesting(true)}
+          >
+            <Firmware
+              open={openFirmwareTesting}
+              setOpen={setOpenFirmwareTesting}
+            />
+            <CardMedia
+              sx={{
+                height: 300,
+                backgroundPosition: "center top 10%", // Moves the image lower
+              }}
+              image="/images/extra/Firmware.png"
+            />
+            <CardContent>
+              <div className="">
+                <p className="bg-blue-100 inline-block px-2 py-1 rounded-full text-blue-800 font-light font-mono text-xs mb-2">
+                  Testing
+                </p>
+                <h3 className="text-lg font-semibold">Firmware Checklist</h3>
+                <p className="text-sm text-gray-600">
+                  The team tested the different versions of firmwares across
+                  multiple hardware devices provided by the product team.
                 </p>
               </div>
             </CardContent>
