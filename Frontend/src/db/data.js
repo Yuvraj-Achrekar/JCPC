@@ -1,6 +1,8 @@
 export const issuePieChart = [
-  { id: 0, value: 254, label: "Open Issues", color: "#82B7CA" }, //#20236D
-  { id: 1, value: 143, label: "Resolved", color: "#82ca9d" },
+  { id: 0, value: 352, label: "Open Issues", color: "#4caf7d" }, //#20236D
+  { id: 1, value: 54, label: "Under-Obs ", color: "#fcd34d" },
+  { id: 2, value: 776, label: "Retired", color: "#5FA1B8" }, //#20236D
+  { id: 3, value: 286, label: "Resolved", color: "#d8b4fe" },
 ];
 
 export const totalIssuePieChart = [
