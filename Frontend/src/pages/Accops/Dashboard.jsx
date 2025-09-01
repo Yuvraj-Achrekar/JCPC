@@ -91,8 +91,9 @@ const Dashboard = () => {
             shouldOpenModal={true}
           />
         </div>
-        <div className="md:row-span-2 w-[36%]">
-          <div className="mb-4 font-semibold text-xl flex items-center justify-center text-black ">
+        {/* Issue Breakdown chart */}
+        <div className="md:row-span-2 w-[36%] bg-gray-100 rounded-md">
+          <div className="mt-4 pr-4 mb-4 font-semibold text-xl flex items-center justify-center text-black ">
             Issue Breakdown
           </div>
           <div className="w-full flex items-center justify-center">

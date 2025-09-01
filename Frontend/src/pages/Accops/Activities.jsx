@@ -47,7 +47,7 @@ const Activities = () => {
         <Slider {...settings}>
           {/* Additional Apps */}
           <Card
-            className="activityCard"
+            className="activityCard min-h-[500px] max-h-[500px]"
             onClick={() => setOpenSoftwareCenterApps(true)}
           >
             <SoftwareCenterApps
@@ -74,7 +74,7 @@ const Activities = () => {
 
           {/* Peripherals Testing */}
           <Card
-            className="activityCard"
+            className="activityCard min-h-[500px] max-h-[500px]"
             onClick={() => setOpenPeripherals(true)}
           >
             <PeripheralsTesting
@@ -101,7 +101,10 @@ const Activities = () => {
           </Card>
 
           {/* Applet and Deklet */}
-          <Card className="activityCard" onClick={() => setOpenDesklet(true)}>
+          <Card
+            className="activityCard min-h-[500px] max-h-[500px]"
+            onClick={() => setOpenDesklet(true)}
+          >
             <Desklets open={openDesklet} setOpen={setOpenDesklet} />
 
             <CardMedia sx={{ height: 300 }} image="/images/extra/Applet.png" />
@@ -123,7 +126,10 @@ const Activities = () => {
           </Card>
 
           {/* Embibe */}
-          <Card className="activityCard" onClick={() => setOpenSelfie(true)}>
+          <Card
+            className="activityCard min-h-[500px] max-h-[500px]"
+            onClick={() => setOpenSelfie(true)}
+          >
             <EmbibeSectionReport open={openSelfie} setOpen={setOpenSelfie} />
             <CardMedia
               sx={{
@@ -150,7 +156,7 @@ const Activities = () => {
 
           {/* BenchMark Testing */}
           <Card
-            className="activityCard"
+            className="activityCard min-h-[500px] max-h-[500px] "
             onClick={() => setOpenBenchmarkTesting(true)}
           >
             <BenchMark
@@ -181,7 +187,10 @@ const Activities = () => {
           </Card>
 
           {/*JioWrite  */}
-          <Card className="activityCard" onClick={() => setOpenJioWrites(true)}>
+          <Card
+            className="activityCard min-h-[500px] max-h-[500px]"
+            onClick={() => setOpenJioWrites(true)}
+          >
             <JioWrite open={openJioWrites} setOpen={setOpenJioWrites} />
             <CardMedia
               sx={{
@@ -208,7 +217,7 @@ const Activities = () => {
 
           {/* Firmware */}
           <Card
-            className="activityCard"
+            className="activityCard min-h-[500px] max-h-[500px]"
             onClick={() => setOpenFirmwareTesting(true)}
           >
             <Firmware
