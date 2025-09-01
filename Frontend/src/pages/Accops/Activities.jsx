@@ -15,6 +15,9 @@ import EmbibeSectionReport from "../../components/extra/EmbibeSectionReport";
 import Desklets from "../../components/extra/Desklet";
 import BenchMark from "../../components/extra/Benchmark";
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 const Activities = () => {
   const [openSelfie, setOpenSelfie] = useState(false);
   const [openPeripherals, setOpenPeripherals] = useState(false);
@@ -36,6 +39,26 @@ const Activities = () => {
     swipeToSlide: true, // allows touchpad drag to scroll
     draggable: true, // allows mouse drag
     touchMove: true,
+    responsive: [
+      {
+        breakpoint: 1200, // screens <= 1024px
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 900, // screens <= 768px
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 480, // screens <= 480px
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
   return (
@@ -47,17 +70,19 @@ const Activities = () => {
         <Slider {...settings}>
           {/* Additional Apps */}
           <Card
-            className="activityCard min-h-[500px] max-h-[500px]"
+            sx={{ maxHeight: 465, minHeight: 465 }}
             onClick={() => setOpenSoftwareCenterApps(true)}
           >
             <SoftwareCenterApps
               open={openSoftwareCenterApps}
               setOpen={setOpenSoftwareCenterApps}
             />
+
             <CardMedia
               sx={{ height: 300 }}
               image="/images/extra/Additional.png"
             />
+
             <CardContent className="mb-5">
               <div className="">
                 <p className="bg-blue-100 inline-block px-2 py-1 rounded-full text-blue-800 font-light font-mono text-xs mb-2">
@@ -74,7 +99,7 @@ const Activities = () => {
 
           {/* Peripherals Testing */}
           <Card
-            className="activityCard min-h-[500px] max-h-[500px]"
+            sx={{ maxHeight: 465, minHeight: 465 }}
             onClick={() => setOpenPeripherals(true)}
           >
             <PeripheralsTesting
@@ -102,7 +127,7 @@ const Activities = () => {
 
           {/* Applet and Deklet */}
           <Card
-            className="activityCard min-h-[500px] max-h-[500px]"
+            sx={{ maxHeight: 465, minHeight: 465 }}
             onClick={() => setOpenDesklet(true)}
           >
             <Desklets open={openDesklet} setOpen={setOpenDesklet} />
@@ -127,7 +152,7 @@ const Activities = () => {
 
           {/* Embibe */}
           <Card
-            className="activityCard min-h-[500px] max-h-[500px]"
+            sx={{ maxHeight: 465, minHeight: 465 }}
             onClick={() => setOpenSelfie(true)}
           >
             <EmbibeSectionReport open={openSelfie} setOpen={setOpenSelfie} />
@@ -156,7 +181,7 @@ const Activities = () => {
 
           {/* BenchMark Testing */}
           <Card
-            className="activityCard min-h-[500px] max-h-[500px] "
+            sx={{ maxHeight: 465, minHeight: 465 }}
             onClick={() => setOpenBenchmarkTesting(true)}
           >
             <BenchMark
@@ -188,7 +213,7 @@ const Activities = () => {
 
           {/*JioWrite  */}
           <Card
-            className="activityCard min-h-[500px] max-h-[500px]"
+            sx={{ maxHeight: 465, minHeight: 465 }}
             onClick={() => setOpenJioWrites(true)}
           >
             <JioWrite open={openJioWrites} setOpen={setOpenJioWrites} />
@@ -217,7 +242,7 @@ const Activities = () => {
 
           {/* Firmware */}
           <Card
-            className="activityCard min-h-[500px] max-h-[500px]"
+            sx={{ maxHeight: 465, minHeight: 465 }}
             onClick={() => setOpenFirmwareTesting(true)}
           >
             <Firmware
