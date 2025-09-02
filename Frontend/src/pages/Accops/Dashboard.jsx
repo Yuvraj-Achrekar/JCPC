@@ -110,7 +110,7 @@ const Dashboard = () => {
       <section className=" text-black mb-4 p-6 rounded-lg flex gap-10 ">
         <JioPcObservation title="JioPC" workItems={jioPcWorkItems} />
         <AreaChart
-          title="Issues Raised (9th April - 29th July)"
+          title="Issues Raised (9th April - 31th August)"
           areaChartData={jioPcAreaChartData}
         />
       </section>
