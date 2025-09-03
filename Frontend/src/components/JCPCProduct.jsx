@@ -32,7 +32,7 @@ export default function JCPCProduct() {
 
   return (
     <div
-      className="rounded-lg p-6 text-emerald-800 bg-emerald-200 cursor-pointer"
+      className="rounded-lg p-6 text-emerald-800 bg-emerald-300 cursor-pointer"
       onClick={() => setOpen(true)}
     >
       <Dialog

@@ -25,7 +25,7 @@ const Firmware = ({ open, setOpen }) => {
 
       <div className="fixed inset-0 z-10 w-screen h-screen overflow-y-auto">
         <div className="flex items-center justify-center min-h-screen p-4">
-          <DialogPanel className="relative w-full max-w-4xl max-h-[90vh] overflow-hidden rounded-2xl bg-white text-left shadow-2xl">
+          <DialogPanel className="relative w-full max-w-6xl max-h-[90vh] overflow-hidden rounded-2xl bg-white text-left shadow-2xl">
             {/* Header */}
             <div className="sticky top-0 left-0 w-full bg-blue-800 text-white z-20 p-4 rounded-t-2xl flex justify-between items-center">
               <h2 className="font-bold text-2xl text-center w-full">

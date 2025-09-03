@@ -1,8 +1,8 @@
 export const issuePieChart = [
-  { id: 0, value: 354, label: "Open Issues", color: "#4caf7d" }, //#20236D
+  { id: 0, value: 354, label: "Open Issues", color: "#fca5a5" }, //#20236D
   { id: 1, value: 68, label: "Under-Obs ", color: "#fcd34d" },
-  { id: 2, value: 797, label: "Retired", color: "#5FA1B8" }, //#20236D
-  { id: 3, value: 291, label: "Resolved", color: "#d8b4fe" },
+  { id: 2, value: 797, label: "Retired", color: "#7dd3fc" }, //#20236D
+  { id: 3, value: 291, label: "Resolved", color: "#6ee7b7" },
 ];
 
 export const totalIssuePieChart = [
@@ -33,7 +33,7 @@ export const jioPcWorkItems = [
   {
     title: "Launch Blocker",
     count: 20,
-    color: "bg-red-200",
+    color: "bg-red-300",
     text: "text-red-800",
     definition:
       "Launch blocker are the issues which are needed to be fixed before launching the product.",
@@ -41,7 +41,7 @@ export const jioPcWorkItems = [
   {
     title: "Key Blocker/Critical",
     count: 71,
-    color: "bg-orange-200",
+    color: "bg-orange-300",
     text: "text-orange-800",
     definition:
       "Key Blocker/Critical are the issues which are more product specific",
@@ -49,28 +49,28 @@ export const jioPcWorkItems = [
   {
     title: "X2 & X4 Issues",
     count: 242,
-    color: "bg-yellow-200",
+    color: "bg-yellow-300",
     text: "text-yellow-800",
     definition: "Open Issues for both X2 & X4",
   },
   {
     title: "X2 Specific",
     count: 5,
-    color: "bg-purple-200",
+    color: "bg-purple-300",
     text: "text-purple-800",
     definition: "Open issues for X2 Specific",
   },
   {
     title: "X4 Specific",
     count: 23,
-    color: "bg-sky-200",
+    color: "bg-sky-300",
     text: "text-sky-800",
     definition: "Open issues for X4 Specific.",
   },
   {
     title: "Ready for test",
     count: 22,
-    color: "bg-green-200",
+    color: "bg-emerald-300",
     text: "text-green-800",
     definition: "Issues which are ready for testing",
   },

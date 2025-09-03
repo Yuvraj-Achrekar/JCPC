@@ -3,20 +3,8 @@ import { Dialog, DialogBackdrop, DialogPanel } from "@headlessui/react";
 import { IoClose } from "react-icons/io5";
 import { FaHome } from "react-icons/fa";
 
-const AppCard = ({ name, color }) => {
-  return (
-    <div
-      className={`bg-${color}-300 border border-${color}-100 hover:border-${color}-400 
-      hover:shadow-lg transition-all duration-300 rounded-xl px-4 py-6 flex items-center 
-      justify-center text-center text-sm font-medium text-black shadow-lg`}
-    >
-      {name}
-    </div>
-  );
-};
-
 const List = ({ items }) => (
-  <ul className="list-disc ml-6 space-y-1 text-gray-700">
+  <ul className="list-disc ml-6 space-y-1">
     {items.map((item, idx) => (
       <li key={idx}>{item}</li>
     ))}
@@ -34,36 +22,6 @@ const Section = ({ title, icon, children }) => (
 );
 
 const PeripheralsTesting = ({ open, setOpen }) => {
-  const passedPeripherals = [
-    "Amkette Primus Neo",
-    "Logitech Media K400 Plus",
-    "ANT Value FKBRI05 wireless combo",
-    "CK234",
-    "CK420",
-    "CK801",
-    "ZEB Companion 2",
-    "HP KM250",
-    "Logitech MK220",
-    "Portonics Key2 combo",
-    "Portonics Key5 combo",
-    "Portonics Key7 combo",
-    "Portonics Key9 combo",
-    "HP KM260",
-    "HP KM200",
-    "HP CS10",
-    "HP KM290",
-    "HP KM270",
-    "Logitech KM235",
-    "ANT Esports MKWM2023",
-  ];
-
-  const failedPeripherals = [
-    "ANT Esports WK100",
-    "Amkette WI-KEY MINI 2",
-    "Logitech MK275",
-    "Portonics Key11 combo",
-  ];
-
   return (
     <Dialog
       open={open}
@@ -77,7 +35,9 @@ const PeripheralsTesting = ({ open, setOpen }) => {
           <DialogPanel className="relative w-full max-w-6xl h-fit max-h-[90vh] overflow-hidden rounded-2xl bg-white text-left shadow-xl transition-all">
             {/* Header */}
             <div className="sticky top-0 left-0 w-full bg-blue-800 text-white z-20 rounded-t-2xl px-6 py-4 shadow-md flex items-center justify-between">
-              <h2 className="font-bold text-3xl">Peripherals Testing</h2>
+              <h2 className="font-bold text-2xl text-center w-full ">
+                Peripherals Testing
+              </h2>
               <IoClose
                 onClick={() => setOpen(false)}
                 size={28}
@@ -100,7 +60,7 @@ const PeripheralsTesting = ({ open, setOpen }) => {
               </Section>
 
               {/* Sections */}
-              <Section icon={<FaHome />} title="Testing Focus Area">
+              <Section title="Testing Focus Area">
                 <List
                   items={[
                     "Functionality of all keys and keyboard shortcuts",

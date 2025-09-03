@@ -60,7 +60,7 @@ const Dashboard = () => {
               (acc, item) => acc + item.value,
               0
             )}
-            color="bg-sky-200"
+            color="bg-sky-300"
             textColor="text-sky-800"
             icon={AiOutlineIssuesClose}
             pieData={totalIssuePieChart}
@@ -72,7 +72,7 @@ const Dashboard = () => {
               (acc, item) => acc + item.value,
               0
             )}
-            color="bg-amber-200"
+            color="bg-amber-300"
             textColor="text-amber-800"
             icon={Bug}
             pieData={jioPcOpenIssuePieChart}
@@ -84,7 +84,7 @@ const Dashboard = () => {
               (acc, item) => acc + item.value,
               0
             )}
-            color="bg-purple-200"
+            color="bg-purple-300"
             textColor="text-purple-800"
             icon={Bug}
             pieData={launchBlockerIssuePieChart}
@@ -94,7 +94,7 @@ const Dashboard = () => {
         {/* Issue Breakdown chart */}
         <div className="md:row-span-2 w-[36%] bg-gray-100 rounded-md">
           <div className="mt-4 pr-4 mb-4 font-semibold text-xl flex items-center justify-center text-black ">
-            Issue Breakdown
+            <h3>Issue Breakdown</h3>
           </div>
           <div className="w-full flex items-center justify-center">
             <CustomPieChart

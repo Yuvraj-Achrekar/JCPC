@@ -97,6 +97,36 @@ const Activities = () => {
             </CardContent>
           </Card>
 
+          {/* Firmware */}
+          <Card
+            sx={{ maxHeight: 465, minHeight: 465 }}
+            onClick={() => setOpenFirmwareTesting(true)}
+          >
+            <Firmware
+              open={openFirmwareTesting}
+              setOpen={setOpenFirmwareTesting}
+            />
+            <CardMedia
+              sx={{
+                height: 300,
+                backgroundPosition: "center top 10%", // Moves the image lower
+              }}
+              image="/images/extra/Firmware.png"
+            />
+            <CardContent>
+              <div className="">
+                <p className="bg-blue-100 inline-block px-2 py-1 rounded-full text-blue-800 font-light font-mono text-xs mb-2">
+                  Testing
+                </p>
+                <h3 className="text-lg font-semibold">Firmware Checklist</h3>
+                <p className="text-sm text-gray-600">
+                  The team tested the different versions of firmwares across
+                  multiple hardware devices provided by the product team.
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+
           {/* Peripherals Testing */}
           <Card
             sx={{ maxHeight: 465, minHeight: 465 }}
@@ -235,36 +265,6 @@ const Activities = () => {
                 <p className="text-sm text-gray-600">
                   The team tested three productivity applications within the
                   JioWorkspace suite on persistent machines.
-                </p>
-              </div>
-            </CardContent>
-          </Card>
-
-          {/* Firmware */}
-          <Card
-            sx={{ maxHeight: 465, minHeight: 465 }}
-            onClick={() => setOpenFirmwareTesting(true)}
-          >
-            <Firmware
-              open={openFirmwareTesting}
-              setOpen={setOpenFirmwareTesting}
-            />
-            <CardMedia
-              sx={{
-                height: 300,
-                backgroundPosition: "center top 10%", // Moves the image lower
-              }}
-              image="/images/extra/Firmware.png"
-            />
-            <CardContent>
-              <div className="">
-                <p className="bg-blue-100 inline-block px-2 py-1 rounded-full text-blue-800 font-light font-mono text-xs mb-2">
-                  Testing
-                </p>
-                <h3 className="text-lg font-semibold">Firmware Checklist</h3>
-                <p className="text-sm text-gray-600">
-                  The team tested the different versions of firmwares across
-                  multiple hardware devices provided by the product team.
                 </p>
               </div>
             </CardContent>

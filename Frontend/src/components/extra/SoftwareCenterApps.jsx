@@ -13,7 +13,7 @@ const Section = ({ title, icon, children }) => (
 );
 
 const List = ({ items }) => (
-  <ul className="list-disc ml-6 space-y-1 text-gray-700">
+  <ul className="list-disc ml-6 space-y-1">
     {items.map((item, idx) => (
       <li key={idx}>{item}</li>
     ))}
@@ -83,8 +83,10 @@ const SoftwareCenterApps = ({ open, setOpen }) => {
         <div className="flex items-center justify-center min-h-screen w-full px-4 py-8">
           <DialogPanel className="relative w-full max-w-6xl h-fit max-h-[90vh] overflow-hidden rounded-2xl bg-white text-left shadow-xl transition-all">
             {/* Header */}
-            <div className="sticky top-0 left-0 w-full bg-blue-800 text-white z-20 rounded-t-2xl px-6 py-4 shadow-md flex items-center justify-between">
-              <h2 className="font-bold text-3xl">Additional Apps</h2>
+            <div className="sticky top-0 left-0 w-full bg-blue-800 text-white z-20 p-4 rounded-t-2xl flex ">
+              <h2 className="font-bold text-2xl text-center w-full">
+                Additional Apps
+              </h2>
               <IoClose
                 onClick={() => setOpen(false)}
                 size={28}
@@ -108,11 +110,11 @@ const SoftwareCenterApps = ({ open, setOpen }) => {
               </Section>
 
               {/* Sections */}
-              <Section icon={<FaHome />} title="Testing Focus Area">
+              <Section title="Testing Focus Area">
                 <List
                   items={[
-                    "Application Stability - (Crashes and Freeze Issue)",
-                    "UI Performance - (lag & Graphical Glitches)",
+                    "Application Stability - ( Crashes and Freeze Issue )",
+                    "UI Performance - ( Lag & Graphical Glitches )",
                     "CPU and Memory Utilization",
                     "Verification of essential App-specific features",
                   ]}
