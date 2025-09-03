@@ -79,7 +79,7 @@ const Activities = () => {
             />
 
             <CardMedia
-              sx={{ height: 295 }}
+              sx={{ height: 290 }}
               image="/images/extra/Additional.png"
             />
 
@@ -108,7 +108,7 @@ const Activities = () => {
             />
             <CardMedia
               sx={{
-                height: 295,
+                height: 290,
                 backgroundPosition: "center top 10%", // Moves the image lower
               }}
               image="/images/extra/Firmware.png"
@@ -137,7 +137,7 @@ const Activities = () => {
               setOpen={setOpenPeripherals}
             />
             <CardMedia
-              sx={{ height: 295 }}
+              sx={{ height: 290 }}
               image="/images/extra/Peripherals.png"
             />
             <CardContent>
@@ -162,7 +162,7 @@ const Activities = () => {
           >
             <Desklets open={openDesklet} setOpen={setOpenDesklet} />
 
-            <CardMedia sx={{ height: 295 }} image="/images/extra/Applet.png" />
+            <CardMedia sx={{ height: 290 }} image="/images/extra/Applet.png" />
             <CardContent>
               <div className="">
                 <p className="bg-blue-100 inline-block px-3 py-1 rounded-full text-blue-800 font-light font-mono text-xs mb-2">
@@ -188,7 +188,7 @@ const Activities = () => {
             <EmbibeSectionReport open={openSelfie} setOpen={setOpenSelfie} />
             <CardMedia
               sx={{
-                height: 295,
+                height: 290,
                 backgroundPosition: "top", // Moves the image lower
               }}
               image="/images/extra/Embibe.png"
@@ -220,7 +220,7 @@ const Activities = () => {
             />
             <CardMedia
               sx={{
-                height: 295,
+                height: 290,
                 backgroundPosition: "center top 10%", // Moves the image lower
               }}
               image="/images/extra/Benchmarking.png"
@@ -249,7 +249,7 @@ const Activities = () => {
             <JioWrite open={openJioWrites} setOpen={setOpenJioWrites} />
             <CardMedia
               sx={{
-                height: 295,
+                height: 290,
                 backgroundPosition: "center top 10%", // Moves the image lower
               }}
               image="/images/extra/Apps.png"
