@@ -10,7 +10,7 @@ let connectDB = async () => {
     );
   } catch (err) {
     console.log(err);
-    // console.log("sdfsdf")
+    console.log(process.env.CONNECTION_STRING)
     process.exit(1);
   }
 };

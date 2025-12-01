@@ -1,30 +1,30 @@
 export const issuePieChart = [
-  { id: 0, value: 354, label: "Open Issues", color: "#fca5a5" }, //#20236D
-  { id: 1, value: 68, label: "Under-Obs ", color: "#fcd34d" },
-  { id: 2, value: 797, label: "Retired", color: "#7dd3fc" }, //#20236D
-  { id: 3, value: 291, label: "Resolved", color: "#6ee7b7" },
+  { id: 0, value: 472, label: "Open Issues", color: "#fca5a5" }, //#20236D
+  // { id: 1, value: 11, label: "Under-Obs ", color: "#fcd34d" },
+  { id: 2, value: 895, label: "Retired", color: "#7dd3fc" }, //#20236D
+  { id: 3, value: 293, label: "Resolved", color: "#6ee7b7" },
 ];
 
 export const totalIssuePieChart = [
-  { id: 0, value: 39, label: "Blocker", color: "#fecaca" },
-  { id: 1, value: 602, label: "Critical", color: "#fef08a" },
-  { id: 2, value: 769, label: "Major", color: "#fed7aa" },
-  { id: 3, value: 475, label: "Normal", color: "#e9d5ff" },
-  { id: 4, value: 67, label: "Minor", color: "#bae6fd" },
+  { id: 0, value: 50, label: "Blocker", color: "#fecaca" },
+  { id: 1, value: 708, label: "Critical", color: "#fef08a" },
+  { id: 2, value: 940, label: "Major", color: "#fed7aa" },
+  { id: 3, value: 602, label: "Normal", color: "#e9d5ff" },
+  { id: 4, value: 93, label: "Minor", color: "#bae6fd" },
 ];
 
 export const jioPcOpenIssuePieChart = [
-  { id: 0, value: 7, label: "Blocker", color: "#fecaca" },
-  { id: 1, value: 115, label: "Critical", color: "#fef08a" },
-  { id: 2, value: 174, label: "Major", color: "#fed7aa" },
-  { id: 3, value: 51, label: "Normal", color: "#e9d5ff" },
-  { id: 4, value: 7, label: "Minor", color: "#bae6fd" },
+  { id: 0, value: 12, label: "Blocker", color: "#fecaca" },
+  { id: 1, value: 163, label: "Critical", color: "#fef08a" },
+  { id: 2, value: 209, label: "Major", color: "#fed7aa" },
+  { id: 3, value: 77, label: "Normal", color: "#e9d5ff" },
+  { id: 4, value: 11, label: "Minor", color: "#bae6fd" },
 ];
 
 export const launchBlockerIssuePieChart = [
   { id: 0, value: 3, label: "Blocker", color: "#fecaca" },
-  { id: 1, value: 10, label: "Critical", color: "#fef08a" },
-  { id: 2, value: 6, label: "Major", color: "#fed7aa" },
+  { id: 1, value: 15, label: "Critical", color: "#fef08a" },
+  { id: 2, value: 3, label: "Major", color: "#fed7aa" },
   { id: 3, value: 0, label: "Normal", color: "#e9d5ff" },
   { id: 4, value: 1, label: "Minor", color: "#bae6fd" },
 ];
@@ -32,7 +32,7 @@ export const launchBlockerIssuePieChart = [
 export const jioPcWorkItems = [
   {
     title: "Launch Blocker",
-    count: 20,
+    count: 22,
     color: "bg-red-300",
     text: "text-red-800",
     definition:
@@ -40,7 +40,7 @@ export const jioPcWorkItems = [
   },
   {
     title: "Key Blocker/Critical",
-    count: 71,
+    count: 80,
     color: "bg-orange-300",
     text: "text-orange-800",
     definition:
@@ -48,14 +48,14 @@ export const jioPcWorkItems = [
   },
   {
     title: "X2 & X4 Issues",
-    count: 242,
+    count: 443,
     color: "bg-yellow-300",
     text: "text-yellow-800",
     definition: "Open Issues for both X2 & X4",
   },
   {
     title: "X2 Specific",
-    count: 5,
+    count: 7,
     color: "bg-purple-300",
     text: "text-purple-800",
     definition: "Open issues for X2 Specific",
@@ -69,7 +69,7 @@ export const jioPcWorkItems = [
   },
   {
     title: "Ready for test",
-    count: 22,
+    count: 28,
     color: "bg-emerald-300",
     text: "text-green-800",
     definition: "Issues which are ready for testing",
@@ -164,10 +164,7 @@ export const categoryObservations = [
 //   },
 
 export const jioPcAreaChartData = [
-  {
-    name: "April",
-    Issues: 193,
-  },
+  
   {
     name: "May",
     Issues: 211,
@@ -182,6 +179,19 @@ export const jioPcAreaChartData = [
   },
   {
     name: "August",
+    Issues: 81,
+  },
+  {
+    name: "September",
+    Issues: 212,
+  },
+  {
+    name: "October",
+    Issues: 155,
+  },
+  {
+    name: "November",
     Issues: 80,
   },
+
 ];

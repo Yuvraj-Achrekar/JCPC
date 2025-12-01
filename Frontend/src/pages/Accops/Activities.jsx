@@ -8,25 +8,32 @@ import "slick-carousel/slick/slick-theme.css";
 import PeripheralsTesting from "../../components/extra/PeripheralsTesting";
 import Firmware from "../../components/extra/Firmware";
 import JioWrite from "../../components/extra/JioWrite";
-import Desklet from "../../components/extra/Desklet";
-import AiChatBot from "../../components/extra/AiChatBot";
-import EmbibeTesting from "../../components/extra/EmbibeTesting";
+// import Desklet from "../../components/extra/Desklet";
+// import AiChatBot from "../../components/extra/AiChatBot";
+// import EmbibeTesting from "../../components/extra/EmbibeTesting";
 import EmbibeSectionReport from "../../components/extra/EmbibeSectionReport";
 import Desklets from "../../components/extra/Desklet";
 import BenchMark from "../../components/extra/Benchmark";
+import CameraAndMicrophoneTesting from "../../components/extra/CameraAndMicrophoneTesting";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import OmniTesting from "../../components/extra/OmniTesting";
+import YoutubeReview from "../../components/extra/YoutubeReview";
 
 const Activities = () => {
   const [openSelfie, setOpenSelfie] = useState(false);
   const [openPeripherals, setOpenPeripherals] = useState(false);
   const [openSoftwareCenterApps, setOpenSoftwareCenterApps] = useState(false);
-  const [openJioGenie, setOpenJioGenie] = useState(false);
+  // const [openJioGenie, setOpenJioGenie] = useState(false);
   const [openBenchmarkTesting, setOpenBenchmarkTesting] = useState(false);
   const [openJioWrites, setOpenJioWrites] = useState(false);
   const [openFirmwareTesting, setOpenFirmwareTesting] = useState(false);
   const [openDesklet, setOpenDesklet] = useState(false);
+  const [openCameraMic, setOpenCameraMic] = useState(false);
+  const [openOmniTesting, setOpenOmniTesting] = useState(false);
+   const [openYoutubeReview, setOpenYoutubeReview] = useState(false);
+  
 
   const settings = {
     className: "center",
@@ -269,6 +276,96 @@ const Activities = () => {
               </div>
             </CardContent>
           </Card>
+
+          {/* Camera Mic Testing */}
+          <Card
+            sx={{ maxHeight: 465, minHeight: 465 }}
+            onClick={() => setOpenCameraMic(true)}
+          >
+            <CameraAndMicrophoneTesting
+              open={openCameraMic}
+              setOpen={setOpenCameraMic}
+            />
+            <CardMedia
+              sx={{
+                height: 290,
+                backgroundPosition: "center top 10%", // Moves the image lower
+              }}
+              image="/images/extra/Firmware.png"
+            />
+            <CardContent>
+              <div className="">
+                <p className="bg-blue-100 inline-block px-2 py-1 rounded-full text-blue-800 font-light font-mono text-xs mb-2">
+                  Testing
+                </p>
+                <h3 className="text-lg font-semibold">Camera and Mic Testing</h3>
+                <p className="text-sm text-gray-600">
+                  The team performed detailed testing of the camera and microphone functionality on JioPC inside the VDI environment. 
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Omni Prompt */}
+          <Card
+            sx={{ maxHeight: 465, minHeight: 465 }}
+            onClick={() => setOpenOmniTesting(true)}
+          >
+            <OmniTesting
+              open={openOmniTesting}
+              setOpen={setOpenOmniTesting}
+            />
+            <CardMedia
+              sx={{
+                height: 290,
+                backgroundPosition: "center top 10%", // Moves the image lower
+              }}
+              image="/images/extra/Firmware.png"
+            />
+            <CardContent>
+              <div className="">
+                <p className="bg-blue-100 inline-block px-2 py-1 rounded-full text-blue-800 font-light font-mono text-xs mb-2">
+                  Testing
+                </p>
+                <h3 className="text-lg font-semibold">Omni Testing</h3>
+                <p className="text-sm text-gray-600">
+                  The team provided additional support to the Omni team by contributing to prompt creation and executing the required checklists. 
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Omni Prompt */}
+          <Card
+            sx={{ maxHeight: 465, minHeight: 465 }}
+            onClick={() => setOpenYoutubeReview(true)}
+          >
+            <YoutubeReview
+              open={openYoutubeReview}
+              setOpen={setOpenYoutubeReview}
+            />
+            <CardMedia
+              sx={{
+                height: 290,
+                backgroundPosition: "center top 10%", // Moves the image lower
+              }}
+              image="/images/extra/Firmware.png"
+            />
+            <CardContent>
+              <div className="">
+                <p className="bg-blue-100 inline-block px-2 py-1 rounded-full text-blue-800 font-light font-mono text-xs mb-2">
+                  Testing
+                </p>
+                <h3 className="text-lg font-semibold">Users' Reviews on Youtube</h3>
+                <p className="text-sm text-gray-600">
+                  The team reviewed YouTube videos uploaded by various JioPC users to understand real-world feedback and user sentiments. 
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+
+
+
         </Slider>
       </div>
     </section>

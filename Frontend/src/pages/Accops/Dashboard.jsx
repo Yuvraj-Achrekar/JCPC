@@ -109,8 +109,12 @@ const Dashboard = () => {
       {/* Tasks Activity Table */}
       <section className=" text-black mb-4 p-6 rounded-lg flex gap-10 ">
         <JioPcObservation title="JioPC" workItems={jioPcWorkItems} />
-        <AreaChart
-          title="Issues Raised (9th April - 31th August)"
+        
+      </section>
+
+      <section className=" text-black mb-4 p-6 rounded-lg flex gap-10 ">
+            <AreaChart
+          title="Issues Raised (1st May - 30th November)"
           areaChartData={jioPcAreaChartData}
         />
       </section>

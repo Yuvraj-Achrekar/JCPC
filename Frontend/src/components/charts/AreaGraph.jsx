@@ -11,12 +11,12 @@ import {
 
 const AreaGraph = ({ title, areaChartData }) => {
   return (
-    <div style={{ width: "58%", height: 310, maxWidth: 800 }}>
+    <div style={{ width: "90%", height: 310, maxWidth: 800 }}>
       <h2 className="text-center font-semibold text-xl mb-5">{title}</h2>
 
       <ResponsiveContainer>
         <AreaChart
-          width={430}
+          width={500}
           height={300}
           data={areaChartData}
           margin={{ top: 10, right: 30, left: 0, bottom: 0 }}

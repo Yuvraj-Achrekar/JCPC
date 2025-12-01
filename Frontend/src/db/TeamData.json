@@ -32,22 +32,6 @@
 		"Tags": "Tester"
 	},
 	{
-		"Domain": "Ananyaa.Sridhar",
-		"Name": "Ananyaa Sridhar",
-		"About": "An artistic and creative professional with a passion for exploring new ideas. An aspiring 3D model artist and eager to expand her skills and make her mark in the world of digital art.",
-		"Courses Completed": "1. Blender tutorial 4\n2. Augmented Reality Tutorial (The AI university)",
-		"Extra Activities": "1. AI Selfie Module\n2. AI Bot (Managed WiFi )\n3. Tamil transcript validation",
-		"linkedin": "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2F",
-		"DOB": "30th September",
-		"Blocker": 0,
-		"Critical": 3,
-		"Major": 1,
-		"Normal": 2,
-		"Minor": 2,
-		"Total_score": 37,
-		"Tags": "Tester"
-	},
-	{
 		"Domain": "Anirudh.Bhardwaj",
 		"Name": "Anirudh Bhardwaj",
 		"About": "A focused individual and a team player, determined to achieve my goals",
@@ -61,22 +45,6 @@
 		"Normal": 3,
 		"Minor": 0,
 		"Total_score": 29,
-		"Tags": "Tester"
-	},
-	{
-		"Domain": "Anubhav.V",
-		"Name": "Anubhav Vishwakarma",
-		"About": "Eager learner with a strong passion for technology, always striving to enhance my skills",
-		"Courses Completed": "1. React\n2. Framer Motion Animations\n3. Master Backend series*",
-		"Extra Activities": "1. AI Selfie Module\n2. AI Bot (Managed WiFi )",
-		"linkedin": "https://www.linkedin.com/in/anubhav-vishwakarma-14273929a/",
-		"DOB": "20th June",
-		"Blocker": 0,
-		"Critical": 1,
-		"Major": 6,
-		"Normal": 3,
-		"Minor": 2,
-		"Total_score": 49,
 		"Tags": "Tester"
 	},
 	{
@@ -94,22 +62,6 @@
 		"Minor": 0,
 		"Total_score": 52,
 		"Tags": "Tester"
-	},
-	{
-		"Domain": "Dhanvi.Mange",
-		"Name": "Dhanvi Mange",
-		"About": "Enthusiastic person passionate about exploring new ideas, and developing innovative .",
-		"Courses Completed": "1. Blockchain Basis",
-		"Extra Activities": "1. AI Selfie Module\n2. AI Bot (Managed WiFi )",
-		"linkedin": "http://www.linkedin.com/in/dhanvi-anil-mange-800b31198",
-		"DOB": "19th November",
-		"Blocker": 1,
-		"Critical": 2,
-		"Major": 1,
-		"Normal": 1,
-		"Minor": 0,
-		"Total_score": 34,
-		"Tags": "JCPC Lead"
 	},
 	{
 		"Domain": "Hamza5.Shaikh",
@@ -160,22 +112,6 @@
 		"Tags": "Tester"
 	},
 	{
-		"Domain": "Jeevan.Mitra",
-		"Name": "Jeevan Mitra",
-		"About": "A motivated learner with a deep passion for technology, constantly seeking to improve my skills.",
-		"Courses Completed": "1. ReactJS \n2. React Material UI",
-		"Extra Activities": "1. AI Bot (Managed WiFi)\n2. Selfie module",
-		"linkedin": "https://www.linkedin.com/in/jeevan-mitra-reddi-3518541b7/",
-		"DOB": "",
-		"Blocker": 0,
-		"Critical": 1,
-		"Major": 3,
-		"Normal": 3,
-		"Minor": 0,
-		"Total_score": 32,
-		"Tags": "Tester"
-	},
-	{
 		"Domain": "Kapil.Chouksey",
 		"Name": "Kapil Chouksey",
 		"About": "A continuous learner who looks for new ways to finish the task in the allotted time",
@@ -190,22 +126,6 @@
 		"Minor": 0,
 		"Total_score": 23,
 		"Tags": "AI Bot & Asset Management Lead"
-	},
-	{
-		"Domain": "Karthik19.R",
-		"Name": "Karthik R",
-		"About": "Always Positive, cool , patience. Open to discussion fourm for tech knowledge. Passion to develop unique way of demonstrating the skills.",
-		"Courses Completed": "1. Data structure using java.\n2. Microsoft Powerpoint.",
-		"Extra Activities": "1. Technical points for the wifi management chatBot.",
-		"linkedin": "https://www.linkedin.com/in/karthik-r-282597279/",
-		"DOB": "27th December",
-		"Blocker": 0,
-		"Critical": 1,
-		"Major": 3,
-		"Normal": 3,
-		"Minor": 2,
-		"Total_score": 34,
-		"Tags": "Tester"
 	},
 	{
 		"Domain": "Kaushal.Saple",
@@ -286,22 +206,6 @@
 		"Minor": 0,
 		"Total_score": 106,
 		"Tags": "Validator"
-	},
-	{
-		"Domain": "Purva.Tongale",
-		"Name": "Purva Tongale",
-		"About": "A driven and curious UI/UX \nenthusiast, always seeking fresh\n ideas and new skills",
-		"Courses Completed": "1. UI/UX bootcamp",
-		"Extra Activities": "1. AI Bot(Managed WiFi Solution)",
-		"linkedin": "https://teams.microsoft.com/l/message/48:notes/1727778988909?context=%7B%22contextType%22%3A%22chat%22%7D",
-		"DOB": "29th March",
-		"Blocker": 0,
-		"Critical": 0,
-		"Major": 1,
-		"Normal": 9,
-		"Minor": 0,
-		"Total_score": 32,
-		"Tags": "Tester"
 	},
 	{
 		"Domain": "Rohit.Rawate",
@@ -430,37 +334,5 @@
 		"Minor": 1,
 		"Total_score": 33,
 		"Tags": "Tester"
-	},
-	{
-		"Domain": "Vaishnavi.Konale",
-		"Name": "Vaishnavi Konale",
-		"About": "A dedicated learner and coding enthusiast, eager to expand the skills through hands on projects.",
-		"Courses Completed": "1. Spring Boot with \nembedded database\n2. Frontend development using React",
-		"Extra Activities": "1. AI Selfie Module\n2. AI Bot(Managed WiFi )",
-		"linkedin": "https://www.linkedin.com/in/vaishnavi-konale-ba58b6255/?originalSubdomain=in",
-		"DOB": "27th August",
-		"Blocker": 0,
-		"Critical": 1,
-		"Major": 3,
-		"Normal": 4,
-		"Minor": 2,
-		"Total_score": 37,
-		"Tags": "Tester"
-	},
-	{
-		"Domain": "Yuvraj.Achrekar",
-		"Name": "Yuvraj Achrekar",
-		"About": "Dedicated developer focused on delivering innovative and scalable solution through efficient coding practices and user-driven design.",
-		"Courses Completed": "1. Building React Web Application\n2. RESTful API with Express.js and Node.js",
-		"Extra Activities": "1. Developed Biweekly Website\n2. Task Lead for AI Selfie Module\n3. OS Research",
-		"linkedin": "http://www.linkedin.com/in/yuvraj-achrekar-213a10259",
-		"DOB": "29th June",
-		"Blocker": 0,
-		"Critical": 2,
-		"Major": 1,
-		"Normal": 8,
-		"Minor": 0,
-		"Total_score": 45,
-		"Tags": "Validator"
 	}
 ]
