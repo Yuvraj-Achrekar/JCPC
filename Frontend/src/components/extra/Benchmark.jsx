@@ -34,7 +34,7 @@ const BenchMark = ({ open, setOpen }) => {
               <Section title="Overview">
                 <p>
                   The team benchmarked VDI performance under different internet
-                  speeds to assess usability and responsiveness such asload
+                  speeds to assess usability and responsiveness such as load
                   times, crash rates, input delays, frame drops, and max
                   playback resolution.
                 </p>
@@ -44,7 +44,7 @@ const BenchMark = ({ open, setOpen }) => {
               <Section title="Scenarios Covered:">
                 <List
                   items={[
-                    "Browsing local fito directorios",
+                    "Browsing local file directories",
                     "Opening PDF, image, and Excel files",
                     "Web browsing functionality",
                     "Input latency using mouse and keyboard",
@@ -59,8 +59,8 @@ const BenchMark = ({ open, setOpen }) => {
                   items={[
                     "Load time and launch time",
                     "Application success rate without crashing",
-                    "Input latency Inveis",
-                    "Frame drop rates during playtrack",
+                    "Input latency levels",
+                    "Frame drop rates during playback",
                     "Maximum playback resolution supported",
                   ]}
                 />

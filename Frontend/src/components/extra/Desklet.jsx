@@ -63,7 +63,7 @@ const Desklets = ({ open, setOpen }) => {
               <Section title="Testing Focus Area">
                 <List
                   items={[
-                    "Stability - ( Crashes and Freeze Issue )",
+                    "Stability - ( Crashes and Freeze Issues )",
                     "UI Performance - ( Lag & Graphical Glitches )",
                     "CPU and Memory Utilization",
                     "Verification of essential features",
@@ -76,7 +76,7 @@ const Desklets = ({ open, setOpen }) => {
                 <p>
                   The internal store of the product contains over 100+ desklets
                   and applets in the SIT environment. The team is responsible
-                  for evaluating each applet and desklet for statitity and
+                  for evaluating each applet and desklet for stability and
                   usability. Based on these test results, the product team
                   decides whether it should be moved to the production
                   environment.

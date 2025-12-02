@@ -33,7 +33,7 @@ const EmbibeSectionReport = ({ open, setOpen }) => {
               {/* Overview */}
               <Section title="Overview">
                 <p>
-                  The team tasted the Embibe LeanLits application, which was
+                  The team tested the Embibe LearnLite application, which was
                   being considered for integration with the product. The Android
                   TV application was manually installed and tested.
                 </p>
@@ -44,9 +44,9 @@ const EmbibeSectionReport = ({ open, setOpen }) => {
                 <List
                   items={[
                     "User interface and navigation",
-                    "Contant variety and quality (e.g., quizzes, video lessons, 30 simulations, books)",
-                    "App performance (lagg, crashes)",
-                    "Coverage across academic and competitive domaina like school curriculum",
+                    "Contant variety and quality (e.g., quizzes, video lessons, 3D simulations, books)",
+                    "App performance (lag, crashes)",
+                    "Coverage across academic and competitive domains like school curriculum",
                     "UPSC, MBA, Medical, and Engineering Exams",
                   ]}
                 />
@@ -54,7 +54,7 @@ const EmbibeSectionReport = ({ open, setOpen }) => {
 
               <Section title="Summary">
                 <p>
-                  The team tested the Embibe LeanLits app for potential product
+                  The team tested the Embibe LearnLite app for potential product
                   integration, While focusing was on key aspects of app like
                   UI/navigation, content quality, app performance, and domain
                   coverage. The app was evaluated across school and competitive

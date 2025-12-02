@@ -17,7 +17,7 @@ const YoutubeReview = ({ open, setOpen }) => {
             {/* Header */}
             <div className="sticky top-0 left-0 w-full bg-blue-800 text-white z-20 p-4 rounded-t-2xl flex justify-between items-center">
               <h2 className="font-bold text-2xl text-center w-full">
-                Users' Review on Youtube
+                JioPC's User Review from Youtube
               </h2>
               <IoClose
                 onClick={() => setOpen(false)}
@@ -32,13 +32,13 @@ const YoutubeReview = ({ open, setOpen }) => {
               {/* Overview */}
               <Section title="Summary">
                 <p>
-                The team reviewed YouTube videos uploaded by various JioPC users to understand real-world feedback and user sentiments. All observations from these reviews were analyzed, and any issues mentioned in the videos were compared with the team's existing issue logs.
-                </p>
-              </Section>
-
-              <Section title="Outcome">
-                <p>
-                  Issues that were already raised internally were tagged with “YouTube Review” for tracking and correlation with user-reported feedback.
+                  The team conducted regular reviews of YouTube videos uploaded
+                  by JioPC users to gather real-world feedback and understand
+                  user sentiment across different regions and languages.
+                  Observations from these multilingual reviews were documented
+                  and mapped against existing issue logs. This activity is
+                  performed frequently to ensure continuous tracking of
+                  user-reported issues and feedback trends.
                 </p>
               </Section>
             </div>

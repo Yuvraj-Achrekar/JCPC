@@ -44,10 +44,10 @@ const Firmware = ({ open, setOpen }) => {
               {/* Overview */}
               <Section title="Overview">
                 <p>
-                  The team tested the different versions of firmwares across
+                  The team tested the different versions of firmware across
                   multiple hardware devices provided by the product team. This
                   includes key functionality tests and checklist execution which
-                  focues on camera-mic and USB support testing.
+                  focuses on camera-mic and USB support testing.
                 </p>
               </Section>
 

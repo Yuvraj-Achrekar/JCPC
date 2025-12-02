@@ -2,8 +2,11 @@ import { CardContainer, CardItem } from "../components/ui/3d-card";
 import { useState } from "react";
 import UserModal from "./modals/UserModal";
 import UserProfile from "./UserProfile";
+import { Star } from "lucide-react";
 
 export default function CustomCard({ user, allUsers }) {
+  console.log(user);
+
   const [isOpen, setIsOpen] = useState(false);
   const handleOpenModal = (e) => {
     e.stopPropagation();
@@ -22,11 +25,17 @@ export default function CustomCard({ user, allUsers }) {
           user.tag === "Released" ? "bg-gray-300" : "bg-[#F8F9FA]"
         }`}
       >
-        <CardContainer className="flex flex-col w-full justify-center mx-2 my-4 text-center  ">
+        <CardContainer className="flex flex-col w-full justify-center mx-2 my-4 text-center ">
           <CardItem
             translateZ="60"
-            className="flex flex-col justify-center items-center w-full relative"
+            className="flex flex-col justify-center items-center w-full relative "
           >
+            {user.domainID == "keshav.kabra" && (
+              <div className="z-50 absolute top-1 right-1 text-white pr-1.5 pl-1.5 rounded-full ">
+                {/* <p className="text-black font-bold text-2xl ">*</p> */}
+                <Star color="#0d76e6" fill="#0d76e6" />
+              </div>
+            )}
             <UserProfile
               src={user.image}
               domainId={user.domainId}

@@ -76,6 +76,7 @@ const Activities = () => {
         <Slider {...settings}>
           {/* Additional Apps */}
           <Card
+            className="cursor-pointer"
             sx={{ maxHeight: 465, minHeight: 465 }}
             onClick={() => setOpenSoftwareCenterApps(true)}
           >
@@ -105,6 +106,7 @@ const Activities = () => {
 
           {/* Firmware */}
           <Card
+            className="cursor-pointer"
             sx={{ maxHeight: 465, minHeight: 465 }}
             onClick={() => setOpenFirmwareTesting(true)}
           >
@@ -115,7 +117,7 @@ const Activities = () => {
             <CardMedia
               sx={{
                 height: 290,
-                backgroundPosition: "center top 10%", // Moves the image lower
+                backgroundPosition: "center top 20%", // Moves the image lower
               }}
               image="/images/extra/Firmware.png"
             />
@@ -126,7 +128,7 @@ const Activities = () => {
                 </p>
                 <h3 className="text-lg font-semibold">Firmware Checklist</h3>
                 <p className="text-sm text-gray-600">
-                  The team tested the different versions of firmwares across
+                  The team tested the different versions of firmware across
                   multiple hardware devices provided by the product team.
                 </p>
               </div>
@@ -135,6 +137,7 @@ const Activities = () => {
 
           {/* Peripherals Testing */}
           <Card
+            className="cursor-pointer"
             sx={{ maxHeight: 465, minHeight: 465 }}
             onClick={() => setOpenPeripherals(true)}
           >
@@ -163,6 +166,7 @@ const Activities = () => {
 
           {/* Applet and Deklet */}
           <Card
+            className="cursor-pointer"
             sx={{ maxHeight: 465, minHeight: 465 }}
             onClick={() => setOpenDesklet(true)}
           >
@@ -188,6 +192,7 @@ const Activities = () => {
 
           {/* Embibe */}
           <Card
+            className="cursor-pointer"
             sx={{ maxHeight: 465, minHeight: 465 }}
             onClick={() => setOpenSelfie(true)}
           >
@@ -208,7 +213,7 @@ const Activities = () => {
                   Embibe Website Testing
                 </h3>
                 <p className="text-sm text-gray-600">
-                  The team tasted the Embibe LeanLits application, which was
+                  The team tasted the Embibe LearnLite application, which was
                   being considered for integration with the product.
                 </p>
               </div>
@@ -217,6 +222,7 @@ const Activities = () => {
 
           {/* BenchMark Testing */}
           <Card
+            className="cursor-pointer"
             sx={{ maxHeight: 465, minHeight: 465 }}
             onClick={() => setOpenBenchmarkTesting(true)}
           >
@@ -249,6 +255,7 @@ const Activities = () => {
 
           {/*JioWrite  */}
           <Card
+            className="cursor-pointer"
             sx={{ maxHeight: 465, minHeight: 465 }}
             onClick={() => setOpenJioWrites(true)}
           >
@@ -278,6 +285,7 @@ const Activities = () => {
 
           {/* Camera Mic Testing */}
           <Card
+            className="cursor-pointer"
             sx={{ maxHeight: 465, minHeight: 465 }}
             onClick={() => setOpenCameraMic(true)}
           >
@@ -310,6 +318,7 @@ const Activities = () => {
 
           {/* Omni Prompt */}
           <Card
+            className="cursor-pointer"
             sx={{ maxHeight: 465, minHeight: 465 }}
             onClick={() => setOpenOmniTesting(true)}
           >
@@ -338,6 +347,7 @@ const Activities = () => {
 
           {/* Youtube */}
           <Card
+            className="cursor-pointer"
             sx={{ maxHeight: 465, minHeight: 465 }}
             onClick={() => setOpenYoutubeReview(true)}
           >
@@ -355,10 +365,10 @@ const Activities = () => {
             <CardContent>
               <div className="">
                 <p className="bg-blue-100 inline-block px-2 py-1 rounded-full text-blue-800 font-light font-mono text-xs mb-2">
-                  Testing
+                  Research
                 </p>
                 <h3 className="text-lg font-semibold">
-                  Users' Reviews on Youtube
+                  JioPC's User Review from Youtube
                 </h3>
                 <p className="text-sm text-gray-600">
                   The team reviewed YouTube videos uploaded by various JioPC
