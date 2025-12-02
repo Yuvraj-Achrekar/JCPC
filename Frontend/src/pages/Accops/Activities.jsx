@@ -32,8 +32,7 @@ const Activities = () => {
   const [openDesklet, setOpenDesklet] = useState(false);
   const [openCameraMic, setOpenCameraMic] = useState(false);
   const [openOmniTesting, setOpenOmniTesting] = useState(false);
-   const [openYoutubeReview, setOpenYoutubeReview] = useState(false);
-  
+  const [openYoutubeReview, setOpenYoutubeReview] = useState(false);
 
   const settings = {
     className: "center",
@@ -291,16 +290,19 @@ const Activities = () => {
                 height: 290,
                 backgroundPosition: "center top 10%", // Moves the image lower
               }}
-              image="/images/extra/Firmware.png"
+              image="/images/extra/Camera.jpg"
             />
             <CardContent>
               <div className="">
                 <p className="bg-blue-100 inline-block px-2 py-1 rounded-full text-blue-800 font-light font-mono text-xs mb-2">
                   Testing
                 </p>
-                <h3 className="text-lg font-semibold">Camera and Mic Testing</h3>
+                <h3 className="text-lg font-semibold">
+                  Camera and Mic Testing
+                </h3>
                 <p className="text-sm text-gray-600">
-                  The team performed detailed testing of the camera and microphone functionality on JioPC inside the VDI environment. 
+                  The team performed detailed testing of the camera and
+                  microphone functionality on JioPC inside the VDI environment.
                 </p>
               </div>
             </CardContent>
@@ -311,16 +313,13 @@ const Activities = () => {
             sx={{ maxHeight: 465, minHeight: 465 }}
             onClick={() => setOpenOmniTesting(true)}
           >
-            <OmniTesting
-              open={openOmniTesting}
-              setOpen={setOpenOmniTesting}
-            />
+            <OmniTesting open={openOmniTesting} setOpen={setOpenOmniTesting} />
             <CardMedia
               sx={{
                 height: 290,
-                backgroundPosition: "center top 10%", // Moves the image lower
+                backgroundPosition: "center top 40%", // Moves the image lower
               }}
-              image="/images/extra/Firmware.png"
+              image="/images/extra/Omni.jpg"
             />
             <CardContent>
               <div className="">
@@ -329,13 +328,15 @@ const Activities = () => {
                 </p>
                 <h3 className="text-lg font-semibold">Omni Testing</h3>
                 <p className="text-sm text-gray-600">
-                  The team provided additional support to the Omni team by contributing to prompt creation and executing the required checklists. 
+                  The team provided additional support to the Omni team by
+                  contributing to prompt creation and executing the required
+                  checklists.
                 </p>
               </div>
             </CardContent>
           </Card>
 
-          {/* Omni Prompt */}
+          {/* Youtube */}
           <Card
             sx={{ maxHeight: 465, minHeight: 465 }}
             onClick={() => setOpenYoutubeReview(true)}
@@ -347,25 +348,25 @@ const Activities = () => {
             <CardMedia
               sx={{
                 height: 290,
-                backgroundPosition: "center top 10%", // Moves the image lower
+                backgroundPosition: "center top 20%", // Moves the image lower
               }}
-              image="/images/extra/Firmware.png"
+              image="/images/extra/Youtube.jpg"
             />
             <CardContent>
               <div className="">
                 <p className="bg-blue-100 inline-block px-2 py-1 rounded-full text-blue-800 font-light font-mono text-xs mb-2">
                   Testing
                 </p>
-                <h3 className="text-lg font-semibold">Users' Reviews on Youtube</h3>
+                <h3 className="text-lg font-semibold">
+                  Users' Reviews on Youtube
+                </h3>
                 <p className="text-sm text-gray-600">
-                  The team reviewed YouTube videos uploaded by various JioPC users to understand real-world feedback and user sentiments. 
+                  The team reviewed YouTube videos uploaded by various JioPC
+                  users to understand real-world feedback and user sentiments.
                 </p>
               </div>
             </CardContent>
           </Card>
-
-
-
         </Slider>
       </div>
     </section>
